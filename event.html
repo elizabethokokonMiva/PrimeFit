@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upcoming Fashion Shows | REvent</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Unicons Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- Font Awesome FIX -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="event.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-left-top">
+        <div class="logo-home">
+          <div class="home">
+            <a href="./index.html">
+              <img src="./images/icom2.png" alt="" />
+            </a>
+          </div>
+
+          <div class="logo">
+            <p>Event</p>
+          </div>
+        </div>
+
+        <nav class="desktop-nav">
+          <div class="header-right-top">
+            <a href="about.html">About</a>
+            <a href="#" aria-label="Gallery"><i class="uil uil-image-v"></i></a>
+            <a href="contact.html" aria-label="Contact"
+              ><i class="uil uil-phone"></i
+            ></a>
+            <a href="#" id="helpBtn" class="help-btn" aria-label="Get Help">
+              <i class="uil uil-question"></i>
+            </a>
+            <a href="./collections.html"
+              ><i class="uil uil-shopping-cart"></i
+            ></a>
+            <a href="./profile.html"><i class="uil uil-user-circle"></i></a>
+          </div>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+          <i class="uil uil-bars"></i>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <a href="about.html">About </a>
+        <a href="#"><i class="uil uil-image-v"></i> Gallery</a>
+        <a href="contact.html"><i class="uil uil-phone"></i> Contact</a>
+        <a href="#" id="helpBtnMobile" class="help-btn" aria-label="Get Help">
+          <i class="uil uil-question"></i> Get Help
+        </a>
+        <a href="./collections.html"
+          ><i class="uil uil-shopping-cart"></i> Shop</a
+        >
+        <a href="profile.html"><i class="uil uil-user-circle"></i> Account</a>
+      </div>
+    </header>
+
+    <section
+      class="poster-banner hero-section"
+      style="background-image: url('https://via.placeholder.com/1200x600');"
+    >
+      <div class="banner-content">
+        <p class="tagline">The Future of Style</p>
+        <h1>GLOBAL FASHION WEEK 2025</h1>
+        <p class="location-date">
+          <i class="fas fa-map-marker-alt"></i> Milan, Italy | November 25 - 30,
+          2025
+        </p>
+        <a href="#" class="cta-button btn-primary">View Tickets & Packages</a>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="countdown-container">
+        <h2>Event Starts In:</h2>
+        <div id="countdown-timer" class="timer">
+          <div class="time-block">
+            <span id="days">00</span><small>Days</small>
+          </div>
+          <div class="time-block">
+            <span id="hours">00</span><small>Hours</small>
+          </div>
+          <div class="time-block">
+            <span id="minutes">00</span><small>Minutes</small>
+          </div>
+          <div class="time-block">
+            <span id="seconds">00</span><small>Seconds</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="events-page full-width">
+      <h2 class="section-title">Upcoming Shows</h2>
+
+      <section class="events-list-container">
+        <div class="events-list">
+          <div class="event-item">
+            <div class="event-date">
+              <span class="date">26</span><span class="day">Tue</span>
+            </div>
+            <div class="event-details">
+              <h3 class="event-title">The Avant-Garde Collection</h3>
+              <p class="event-meta">
+                <i class="fas fa-clock"></i> <span class="time">7:00 PM</span> |
+                <i class="fas fa-location-arrow"></i>
+                <span class="location">Duomo Fashion Arena, Milan</span>
+              </p>
+              <p class="event-excerpt">
+                An exclusive debut of Spring/Summer lines...
+              </p>
+              <p class="event-price">$250</p>
+            </div>
+            <div class="event-image-wrapper">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="event-image"
+              />
+            </div>
+          </div>
+
+          <div class="event-item featured">
+            <div class="event-date">
+              <span class="date">27</span><span class="day">Wed</span>
+            </div>
+            <div class="event-details">
+              <span class="feature-tag">GALA</span>
+              <h3 class="event-title">Luxury Brand: ÉTOILE ROUGE</h3>
+              <p class="event-meta">
+                <i class="fas fa-clock"></i> <span class="time">9:00 PM</span> |
+                <i class="fas fa-location-arrow"></i>
+                <span class="location">Palazzo Reale, Main Ballroom</span>
+              </p>
+              <p class="event-excerpt">
+                The highly anticipated show featuring the new Winter collection.
+              </p>
+              <p class="event-price">$800</p>
+            </div>
+            <div class="event-image-wrapper">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="event-image"
+              />
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <span class="date">28</span><span class="day">Thu</span>
+            </div>
+            <div class="event-details">
+              <h3 class="event-title">Emerging Talent Showcase</h3>
+              <p class="event-meta">
+                <i class="fas fa-clock"></i> <span class="time">4:00 PM</span> |
+                <i class="fas fa-location-arrow"></i>
+                <span class="location">The Catwalk Hall</span>
+              </p>
+              <p class="event-excerpt">A platform for Europe’s young designers.</p>
+              <p class="event-price">$120</p>
+            </div>
+            <div class="event-image-wrapper">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="event-image"
+              />
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <span class="date">29</span><span class="day">Fri</span>
+            </div>
+            <div class="event-details">
+              <span class="feature-tag">Workshop</span>
+              <h3 class="event-title">Future Fabrics and Sustainability</h3>
+              <p class="event-meta">
+                <i class="fas fa-clock"></i>
+                <span class="time">11:00 AM</span> |
+                <i class="fas fa-location-arrow"></i>
+                <span class="location">Studio 4</span>
+              </p>
+              <p class="event-excerpt">
+                Seminar focused on ethical sourcing and sustainability.
+              </p>
+              <p class="event-price">Free</p>
+            </div>
+            <div class="event-image-wrapper">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="event-image"
+              />
+            </div>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <span class="date">30</span><span class="day">Sat</span>
+            </div>
+            <div class="event-details">
+              <h3 class="event-title">Closing Ceremony & Awards</h3>
+              <p class="event-meta">
+                <i class="fas fa-clock"></i> <span class="time">8:00 PM</span> |
+                <i class="fas fa-location-arrow"></i>
+                <span class="location">Grand Banquet Hall</span>
+              </p>
+              <p class="event-excerpt">
+                Final celebratory runway and Designer of the Year.
+              </p>
+              <p class="event-price">$180</p>
+            </div>
+            <div class="event-image-wrapper">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="event-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule-section">
+        <h2 class="section-title">Full Week Schedule</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Location</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Nov 25</td>
+              <td>5:00 PM</td>
+              <td>Opening Night Reception</td>
+              <td>Event HQ Lounge</td>
+              <td>$100</td>
+            </tr>
+
+            <tr>
+              <td>Nov 26</td>
+              <td>11:00 AM</td>
+              <td>Creative Direction Seminar</td>
+              <td>Studio 4</td>
+              <td>$75</td>
+            </tr>
+
+            <tr>
+              <td>Nov 26</td>
+              <td>7:00 PM</td>
+              <td>The Avant-Garde Collection</td>
+              <td>Duomo Fashion Arena</td>
+              <td>$250</td>
+            </tr>
+
+            <tr>
+              <td>Nov 27</td>
+              <td>9:00 PM</td>
+              <td>ÉTOILE ROUGE (GALA)</td>
+              <td>Palazzo Reale</td>
+              <td>$800</td>
+            </tr>
+
+            <tr>
+              <td>Nov 28</td>
+              <td>4:00 PM</td>
+              <td>Emerging Talent Showcase</td>
+              <td>The Catwalk Hall</td>
+              <td>$120</td>
+            </tr>
+
+            <tr>
+              <td>Nov 29</td>
+              <td>11:00 AM</td>
+              <td>Future Fabrics & Sustainability</td>
+              <td>Studio 4</td>
+              <td>Free</td>
+            </tr>
+
+            <tr>
+              <td>Nov 30</td>
+              <td>8:00 PM</td>
+              <td>Closing Ceremony & Awards</td>
+              <td>Grand Banquet Hall</td>
+              <td>$180</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span class="marquee-item">FEATURED SPONSOR: VOGUE</span>
+        <span class="marquee-item">|</span>
+        <span class="marquee-item">LIVE STREAM STARTING SOON</span>
+        <span class="marquee-item">|</span>
+        <span class="marquee-item">TICKETS SELLING FAST</span>
+      </div>
+    </div>
+
+    <!-- POPUP MODAL -->
+    <div id="popupModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close-btn">&times;</span>
+
+        <div class="modal-header">
+          <i class="uil uil-question-circle"></i>
+          <h2>How Can We Help You?</h2>
+          <p>Your support center for quick assistance and questions.</p>
+        </div>
+
+        <h3 class="section-title">
+          <i class="uil uil-headphones"></i> Quick Help Options
+        </h3>
+
+        <ul class="help-list">
+          <li>
+            <i class="uil uil-truck"></i>
+            <strong>Order Issues</strong> – Track orders and missing items
+          </li>
+
+          <li>
+            <i class="uil uil-credit-card"></i>
+            <strong>Payments & Refunds</strong> – Payment errors, refunds
+          </li>
+
+          <li>
+            <i class="uil uil-tshirt"></i>
+            <strong>Product Questions</strong>
+          </li>
+
+          <li>
+            <i class="uil uil-user-check"></i>
+            <strong>Account Support</strong>
+          </li>
+        </ul>
+
+        <h3 class="section-title">
+          <i class="uil uil-comment-question"></i> Frequently Asked Questions
+        </h3>
+
+        <ul class="faq-list">
+          <li>
+            <i class="uil uil-clock"></i>
+            <strong>Delivery</strong>: 2–5 working days.
+          </li>
+
+          <li>
+            <i class="uil uil-undo"></i>
+            <strong>Return Policy</strong>: 7 days.
+          </li>
+
+          <li>
+            <i class="uil uil-ruler"></i>
+            <strong>Size Guide</strong>: Check chart.
+          </li>
+
+          <li>
+            <i class="uil uil-location-arrow"></i>
+            <strong>Tracking</strong>: Email + WhatsApp.
+          </li>
+        </ul>
+
+        <h3 class="section-title">
+          <i class="uil uil-phone-volume"></i> Contact Us
+        </h3>
+
+        <p>If you still need help, reach our support team:</p>
+
+        <div class="contact-options">
+          <a href="tel:+234000000000"
+            ><i class="uil uil-phone"></i> Call Support</a
+          >
+          <a href="mailto:primefit@gmail.com"
+            ><i class="uil uil-envelope"></i> Email Us</a
+          >
+          <a href="https://wa.me/2349073280102"
+            ><i class="uil uil-whatsapp"></i> WhatsApp Support</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER FIXED -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-column sponsor">
+          <h5>Our Sponsor</h5>
+          <img src="./images/miva.jpg" class="miva-logo" />
+          <p class="sponsor-text">
+            Proudly supported by <strong>Miva Open University</strong>.
+          </p>
+        </div>
+
+        <div class="footer-brand footer-column">
+          <h4>PrimeFit</h4>
+          <p>
+            Fashion that celebrates confidence, elegance, and individuality.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            <a href="#"><i class="uil uil-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h5>Support & Policy</h5>
+          <ul>
+            <li><a href="#shipping">Shipping & Returns</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 PrimeFit. All rights reserved.
+        <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT FIXES -->
+    
+  </body>
+</html>
