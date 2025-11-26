@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./contact.css">
+        <link rel="stylesheet" href="./styles.css">
+
+        <title>contact</title>
+        <script
+      type="module"
+      src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"
+     ></script>
+     <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"/>
+    </head>
+
+    <body>
+     <header class="header">
+      <!-- Top Header -->
+      <div class="header-left-top">
+        <div class="logo-home">
+          <div class="home">
+            <a href="./index.html"> <img src="./images/icom2.png" alt="" /></a>
+          </div>
+
+          <div class="logo">
+            <p>Contact</p>
+          </div>
+        </div>
+
+        <nav class="desktop-nav">
+          <div class="header-right-top">
+            <a href="about.html">About</a>
+            <a href="gallary.html"><i class="uil uil-image-v"></i></a>
+            <a href="./collections.html"><i class="uil uil-shopping-cart"></i></a>
+            <a href="event.html" class="event" aria-label="upcomingevents">
+              <i class="uil uil-schedule"></i>
+            </a>
+            <a href="profile.html"><i class="uil uil-user-circle"></i></a>
+          </div>
+        </nav>
+
+        <!-- Hamburger for mobile -->
+        <div class="hamburger" id="hamburger">
+          <i class="uil uil-bars"></i>
+        </div>
+      </div>
+
+
+
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="about.html">About </a>
+        <a href="gallary.html" aria-label="Gallery"
+          ><i class="uil uil-image-v"></i> Gallery</a
+        >
+        <a href="./collections.html"><i class="uil uil-shopping-cart"></i> Cart</a>
+        <a href="./collections.html"><i class="uil uil-shopping-cart"></i> Collections</a>
+        <a href="event.html" class="event" aria-label="upcomingevents">
+              <i class="uil uil-schedule"> Event</i>
+            </a>
+        <a href="profile.html"><i class="uil uil-user-circle"></i> Account</a>
+        <!-- Add more links for mobile here -->
+      </div>
+    </header>
+
+        <main class="home-container">
+            <div class="arrow-container">
+                <h1>Contact</h1>
+                <p>Let's talk about you next project</p>
+            </div>
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="videos/video-03.mp4" type="video/mp4">
+            </video>
+
+            <div class="drop-down-arrow">
+                <!-- <button class="button-pointer" id="waveArrow">&#8595;</button> -->
+                <a href="#main"> 
+                    <div class="arrow"></div>
+                    <div class="arrow"></div>
+                </a>
+            </div>
+        </main>
+
+
+        <section class="main-body" id="main">
+            <div class="classic-description">
+                <h1>Get Started</h1>
+                <p class="ready">
+                    We'd love to hear from you. Get in touch with our team!
+                </p>
+                <h1 class="ring">Keep in Touch</h1>
+                <p class="good"> Your premier destination for premium fashion. We offer curated collections
+                    for kids, men, and women with unmatched quality and style.
+                </p>
+            </div>
+            <form action="" class="form-container" id="myForm">
+                <div class="specify">
+                    <input class="checked" type="text" placeholder="YOUR NAME" id="name" name="name">
+                    <i class="fa-solid fa-user" style="color: lightgray;" id="iconName"></i>
+                </div>
+                <p style="color: red;" id="nameError"></p>
+                <div class="specify">
+                    <input class="checked" type="text" placeholder="EMAIL ADDRESS" id="email" name="email">
+                    <i class="fa-solid fa-envelope" style="color: lightgray;" id="iconEmail"></i>
+                </div>
+                <p style="color: red;" id="emailError"></p>
+                <div class="specify">
+                    <input class="checked" type="tel" placeholder="YOUR MOBILE NUMBER" id="phone" name="phone">
+                    <i class="fa-solid fa-phone" style="color: lightgray;" id="iconPhone"></i>
+                </div>
+                <p style="color: red;" id="phoneError"></p>
+                <div class="specify">
+                    <input class="checked" type="text" placeholder="EVANTO MARKET" id="market" name="market">
+                    <i class="fa-solid fa-cart-shopping" style="color: lightgrey;" id="iconMarket"></i>
+                </div>
+                <p style="color: red;" id="marketError"></p>
+
+                <select class="specify2" name="service" id="service">
+                    <option value="">WHAT ARE YOU LOOKING FOR</option>
+                    <option value="Select all">Select all</option>
+                    <option value="Web Development">Name</option>
+                    <option value="Search Optimization">Email</option>
+                    <option value="Ads creation">Mobile phone</option>
+                    <option value="Others">Others</option>
+                </select>
+                <p id="serviceError"></p>
+                <input type="submit" value="KEEP IN TOUCH" class="submit-btnnn">
+                <p id="successful" style="color: green; margin-top: 15px;"></p>
+            </form>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="contact-info">
+            <div class="contact-us">
+                <h3>Postal Address</h1>
+                    <p>
+                        376 Herbert Macaulay Way, Yaba, Lagos
+                    </p>
+            </div>
+            <div class="contact-us">
+                <h3>Evanto HQ</h1>
+                    <p>
+                        376 Herbert Macaulay Way, Yaba, Lagos
+                    </p>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Info</h1>
+                    <p>
+                        +234 (810) 651-3882
+                    </p>
+                    <p>
+                        info@primefitcouture.com<br>
+                        We reply within 24 hours
+                    </p>
+            </div>
+            
+        </section>
+
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507364.9018938129!2d2.6936292929677963!3d6.
+        548393297811817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!
+        5e0!3m2!1sen!2sng!4v1686515427386!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy"referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+
+
+        <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Sponsor Column -->
+        <div class="footer-column sponsor">
+          <h5>Our Sponsor</h5>
+          <img
+            src="./images/miva.jpg"
+            alt="Miva Open University Logo"
+            class="miva-logo"
+          />
+          <p class="sponsor-text">
+            Proudly supported by <strong>Miva Open University</strong>.
+          </p>
+        </div>
+
+        <div class="footer-brand footer-column">
+          <h4>PrimeFit</h4>
+          <p>
+            Fashion that celebrates confidence, elegance, and individuality
+            since 2020.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="uil uil-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="uil uil-instagram-alt"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h5>Support & Policy</h5>
+          <ul>
+            <li><a href="#shipping">Shipping & Returns</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 PrimeFit. All rights reserved.
+        <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
+      </div>
+    </footer>
+
+        <script src="js/contact.js"></script>
+        <script src="./script.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeFit</title>
+    <!-- IconScout CDN -->
+    <script
+      type="module"
+      src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
+    />
+    <link rel="stylesheet" href="./cssFile/collection.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- Top Header -->
+      <div class="header-left-top">
+        <div class="logo-home">
+          <div class="home">
+            <a href="./index.html"> <img src="./images/icom2.png" alt="" /></a>
+          </div>
+
+          <div class="logo">
+            <p>Collection</p>
+          </div>
+        </div>
+
+        <nav class="desktop-nav">
+          <div class="header-right-top">
+            <a href="about.html">About</a>
+
+            <a href="gallary.html" aria-label="Gallery"
+              ><i class="uil uil-image-v"></i
+            ></a>
+
+            <a href="contact.html" aria-label="Contact"
+              ><i class="uil uil-phone"></i
+            ></a>
+
+            <a href="#" id="helpBtn" class="help-btn" aria-label="Get Help">
+              <i class="uil uil-question"></i>
+            </a>
+
+            <a href="event.html" class="event" aria-label="upcomingevents">
+              <i class="uil uil-schedule"></i>
+            </a>
+
+            <a href="./profile.html" aria-label="User Account"
+              ><i class="uil uil-user-circle"></i
+            ></a>
+          </div>
+        </nav>
+
+        <!-- Hamburger for mobile -->
+        <div class="hamburger" id="hamburger">
+          <i class="uil uil-bars"></i>
+        </div>
+      </div>
+
+      <!-- Bottom Header -->
+      <div class="down-container">
+        <div class="down-left">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Categories <i class="uil uil-angle-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Men</a>
+              <a href="#">Ladies</a>
+              <a href="#">Kids</a>
+              <!-- Add more categories here -->
+            </div>
+          </div>
+
+          <button>New Arrival</button>
+          <button>Sale</button>
+          <!-- Add more buttons here -->
+        </div>
+
+        <div class="down-right">
+          <input
+            type="text"
+            placeholder="Search products..."
+            id="searchBar"
+            class="searchbar"
+          />
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="about.html">About </a>
+        <a href="gallary.html" aria-label="Gallery"
+          ><i class="uil uil-image-v"></i> Gallery</a
+        >
+        <a href="./contact.html"><i class="uil uil-phone"></i> Contact</a>
+        <a href="#" id="helpBtnMobile" class="help-btn" aria-label="Get Help">
+          <i class="uil uil-question"></i> Get Help
+        </a>
+
+
+        <a href="event.html" class="event" aria-label="upcomingevents">
+          <i class="uil uil-schedule"> Events</i>
+        </a>
+
+        <a href="profile.html"><i class="uil uil-user-circle"></i> Account</a>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="hero-section">
+        <div id="searchResults" class="search-results">
+          <!-- Search results will appear here -->
+        </div>
+
+        <section class="hero">
+          <div class="hero-text">
+            <h1>PrimeFit Couture</h1>
+            <p>Explore The Various Collection of PrimeFit Couture</p>
+            <p>
+              Don't miss out to shopping collection from us!. <br />
+              You'll not be let down
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!--------- COLLECTIONS-------------- -->
+      <section class="collection-body">
+        <div class="top-intro">
+          <div class="marquee">
+            <p>
+              We offer the best collections • Affordable prices for everyone •
+              Quality you can trust • Shop PrimeFit Collection today • New
+              Arrivals Weekly • Premium Quality • Fast Delivery • Best Prices
+              Guaranteed • Trusted by Many •
+            </p>
+          </div>
+          <h2>PrimeFit Collection</h2>
+        </div>
+
+        <div class="collection-grid">
+          <div class="filters">
+            <div class="filter-group">
+              <div class="filter-header"><h4>Brand</h4></div>
+              <div class="filter-options" id="brandFilters">
+                <label class="filter-option" data-value="ankra"
+                  >Ankra<span class="count">20</span></label
+                >
+                <label class="filter-option" data-value="zara"
+                  >Zara<span class="count">10</span></label
+                >
+                <label class="filter-option" data-value="nike"
+                  >Nike<span class="count">18</span></label
+                >
+                <label class="filter-option" data-value="dicks"
+                  >Dickies<span class="count">12</span></label
+                >
+                <label class="filter-option" data-value="vans"
+                  >Vans<span class="count">40</span></label
+                >
+                <label class="filter-option" data-value="uniqlo"
+                  >Uniqlo<span class="count">30</span></label
+                >
+                <div class="show-more"><button>Show more</button></div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <div class="filter-header"><h4>Category</h4></div>
+              <div class="filter-options" id="categoryFilters">
+                <label class="filter-option" data-value="sneakers"
+                  >Sneakers<span class="count">125</span></label
+                >
+                <label class="filter-option" data-value="t-shirts"
+                  >T-Shirts<span class="count">40</span></label
+                >
+                <label class="filter-option" data-value="jeans"
+                  >Jeans<span class="count">16</span></label
+                >
+                <label class="filter-option" data-value="jacket"
+                  >Jacket<span class="count">10</span></label
+                >
+                <label class="filter-option" data-value="sweaters"
+                  >Sweaters<span class="count">24</span></label
+                >
+                <label class="filter-option" data-value="overhemden"
+                  >Overhemden<span class="count">30</span></label
+                >
+                <label class="filter-option" data-value="boots"
+                  >Boots<span class="count">15</span></label
+                >
+                <div class="show-more"><button>Show more</button></div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <div class="filter-header"><h4>Price</h4></div>
+              <div class="price-range">
+                <label for="priceRange">Price range</label>
+                <input
+                  type="range"
+                  min="10000"
+                  max="500000"
+                  value="500000"
+                  id="priceRange"
+                  aria-label="Price range"
+                  title="Price range"
+                />
+                <div class="price-labels">
+                  <span>10K</span>
+                  <span>500K</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-collection" id="productGrid">
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="jacket"
+              data-price="399000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Japan\ Green\ Outer.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Japan Green Outer</h3>
+                <p class="description">
+                  Lightweight utility jacket in a classic field color; perfect
+                  for layering on cool evenings.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 399.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart like-btn"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="t-shirts"
+              data-price="150000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Black\ to\ basic\ tee.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Black to basic tee</h3>
+                <p class="description">
+                  Essential cotton crewneck tee in black; a timeless piece for
+                  any casual outfit.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 150.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="sweaters"
+              data-price="250000"
+            >
+              <div
+                class="product-image"
+                style="background-image: url('./images/Soft\ Hoodie.jpg')"
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Soft Hoodie</h3>
+                <p class="description">
+                  Classic pullover fleece hoodie featuring an embroidered logo
+                  on the chest.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 250.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="dickies"
+              data-category="jacket"
+              data-price="150000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/White\ off\ jacket\ 2024.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">White off jacket 2024</h3>
+                <p class="description">
+                  Light beige workwear jacket with durable poly-cotton blend, a
+                  relaxed fit.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 150.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="jacket"
+              data-price="350000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Navy\ Padded\ Windbreaker.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Navy Padded Windbreaker</h3>
+                <p class="description">
+                  Water-resistant jacket with lightweight insulation and a
+                  concealable hood for outdoor training.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 350.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="t-shirts"
+              data-price="250000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Dreamy\ Brown\ Shirt.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Dreamy Brown Shirt</h3>
+                <p class="description">
+                  Comfort fit graphic T-shirt in warm earth tones, ideal for
+                  skate casual style.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 250.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="overhemden"
+              data-price="150000"
+            >
+              <div
+                class="product-image"
+                style="background-image: url('./images/Pink\ Outer.jpg')"
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Pink Outer Shirt</h3>
+                <p class="description">
+                  Thick cotton overshirt (overhemd) in light pink, suitable as a
+                  light jacket.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 150.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="t-shirts"
+              data-price="150000"
+            >
+              <div
+                class="product-image"
+                style="background-image: url('./images/White\ off\ tee.jpg')"
+              ></div>
+              <div class="product-info">
+                <h3 class="title">White off tee</h3>
+                <p class="description">
+                  Standard fit soft cotton T-shirt in an off-white color with
+                  small chest logo.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 150.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="t-shirts"
+              data-price="250000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/White\ off\ tee\ 2.0.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">White off tee 2.0</h3>
+                <p class="description">
+                  Heavyweight cotton T-shirt in white with a relaxed, boxy
+                  structure.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 250.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="sneakers"
+              data-price="780000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Air\ Max\ 90\ Essentials.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Air Max 90 Essentials</h3>
+                <p class="description">
+                  Iconic sneakers with visible air unit and leather overlays in
+                  deep blue and white.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 780.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="sneakers"
+              data-price="450000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Old\ Skool\ Black-White.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Old Skool Black/White</h3>
+                <p class="description">
+                  Classic low-top skate shoe with canvas and suede upper and
+                  signature waffle outsole.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 450.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="sneakers"
+              data-price="699000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Stan\ Smith\ Leather.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Stan Smith Leather</h3>
+                <p class="description">
+                  Crisp white leather sneaker with green heel tab and perforated
+                  3-Stripes.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 699.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="sneakers"
+              data-price="520000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Contrast\ Runner\ Sneakers.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Contrast Runner Sneakers</h3>
+                <p class="description">
+                  Modern chunky-sole sneaker in grey and orange color block
+                  design.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 520.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="sneakers"
+              data-price="550000"
+            >
+              <div
+                class="product-image"
+                style="background-image: url('./images/Sk8-Hi\ High\ Top.jpg')"
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Sk8-Hi High Top</h3>
+                <p class="description">
+                  High-top skate shoes in vibrant red canvas with reinforced toe
+                  caps.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 550.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="sneakers"
+              data-price="850000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Ultraboost\ Running\ Shoes.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Ultraboost Running Shoes</h3>
+                <p class="description">
+                  High-performance running shoes in light grey knit material
+                  with responsive boost cushioning.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 850.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="sneakers"
+              data-price="950000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Air\ Jordan\ 1\ Mid.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Air Jordan 1 Mid</h3>
+                <p class="description">
+                  Classic basketball silhouette in white leather with cement
+                  grey accents.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 950.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="sneakers"
+              data-price="399000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Canvas\ Court\ Shoe.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Canvas Court Shoe</h3>
+                <p class="description">
+                  Minimalist black canvas tennis shoes with a white rubber sole.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 399.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="sneakers"
+              data-price="480000"
+            >
+              <div
+                class="product-image"
+                style="background-image: url('./images/Classic\ Slip-On.jpg')"
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Classic Slip-On</h3>
+                <p class="description">
+                  Easy slip-on sneakers in checkerboard pattern featuring navy
+                  and white.
+                </p>
+                <div class="product-actions">
+                  <p class="price">#480.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="dickies"
+              data-category="sneakers"
+              data-price="650000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Workwear\ Low\ Trainer.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Workwear Low Trainer</h3>
+                <p class="description">
+                  Durable, low-profile trainer shoe in brown suede with
+                  industrial-grade outsole.
+                </p>
+                <div class="product-actions">
+                  <p class="price">#650.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="sneakers"
+              data-price="699000"
+            >
+              <div
+                class="product-image"
+                style="background-image: url('./images/Dunk\ Low\ Retro.jpg')"
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Dunk Low Retro</h3>
+                <p class="description">
+                  Classic basketball shoe reinvented with vibrant green and
+                  white leather paneling.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 699.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="sneakers"
+              data-price="450000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Authentic\ Canvas\ Navy.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Authentic Canvas Navy</h3>
+                <p class="description">
+                  Original Vans low-top in deep navy canvas with metal eyelets
+                  and vulcanized sole.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 450.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="sneakers"
+              data-price="720000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Samba\ OG\ Trainers.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Samba OG Trainers</h3>
+                <p class="description">
+                  Timeless indoor soccer shoe with black leather upper, suede
+                  toe cap, and gum outsole.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 720.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="sneakers"
+              data-price="550000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Minimalist\ White\ Trainer.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Minimalist White Trainer</h3>
+                <p class="description">
+                  Clean, low-cut white leather-look trainer with a flat sole for
+                  a sharp casual look.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 550.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="jeans"
+              data-price="499000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Slim\ Fit\ Dark\ Wash.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Slim Fit Dark Wash</h3>
+                <p class="description">
+                  Classic dark wash denim jeans with a comfortable slim fit.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 499.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="jeans"
+              data-price="450000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Uniqlo/Ezy\ Tapered\ Blue.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Ezy Tapered Jeans</h3>
+                <p class="description">
+                  Tapered fit jeans with elastic waist for maximum comfort and
+                  style in light blue.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 450.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="dickies"
+              data-category="jeans"
+              data-price="550000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Dickies/874\ Work\ Pants\ Denim.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">874 Work Pants Denim</h3>
+                <p class="description">
+                  Original fit work pants adapted into durable light-wash denim.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 550.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="jeans"
+              data-price="590000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Vans/V56\ Standard\ Black.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">V56 Standard Black</h3>
+                <p class="description">
+                  Standard straight-leg black jeans designed with skate-friendly
+                  stretch.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 590.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="jeans"
+              data-price="620000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Nike/SB\ Loose\ Fit\ Light\ Wash.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">SB Loose Fit Jeans</h3>
+                <p class="description">
+                  Loose, baggy fit jeans in a light blue wash, part of the Nike
+                  Skateboarding line.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 620.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="jeans"
+              data-price="450000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Zara/Skinny\ Ripped\ Grey.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Skinny Ripped Grey</h3>
+                <p class="description">
+                  Highly stretchy skinny jeans in faded grey with fashionable
+                  knee rips.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 450.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="jeans"
+              data-price="599000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Uniqlo/Selvedge\ Tapered.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Selvedge Tapered</h3>
+                <p class="description">
+                  Premium selvedge denim jeans with a comfortable tapered leg,
+                  designed to fade beautifully.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 599.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="dickies"
+              data-category="jeans"
+              data-price="520000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Dickies/Straight\ Leg\ Black\ Denim.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Straight Leg Black Denim</h3>
+                <p class="description">
+                  Classic straight-leg black denim that is fade-resistant and
+                  built to last.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 520.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="jeans"
+              data-price="580000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Vans/Relaxed\ Fit\ Indigo.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Relaxed Fit Indigo</h3>
+                <p class="description">
+                  Comfortable relaxed fit jeans in a medium indigo wash.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 580.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="jeans"
+              data-price="650000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/ankra/Utility\ Denim\ Blue.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Utility Denim Pants</h3>
+                <p class="description">
+                  Functional utility pants in heavy denim with extra pockets and
+                  a straight leg.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 650.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="sweaters"
+              data-price="350000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Uniqlo/Cashmere\ Blend\ Crew\ Navy.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Cashmere Blend Crew</h3>
+                <p class="description">
+                  Soft, fine-gauge crewneck sweater in deep navy, made with a
+                  luxurious cashmere mix.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 350.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="sweaters"
+              data-price="420000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Nike/Sportswear\ Tech\ Fleece\ Grey.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Sportswear Tech Fleece</h3>
+                <p class="description">
+                  Innovative grey Tech Fleece pullover with a modern, tailored
+                  fit.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 420.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="sweaters"
+              data-price="390000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Vans/Checkerboard\ Pullover.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Checkerboard Pullover</h3>
+                <p class="description">
+                  Black fleece hoodie with a subtle checkerboard pattern in the
+                  hood lining.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 390.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="sweaters"
+              data-price="320000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Zara/Textured\ Knit\ Cream.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Textured Knit Sweater</h3>
+                <p class="description">
+                  Heavy knit sweater in cream color with a textured horizontal
+                  stripe pattern.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 320.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="sweaters"
+              data-price="290000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/ankra/Trefoil\ Crew\ Red.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Trefoil Crew Sweatshirt</h3>
+                <p class="description">
+                  Vibrant red crewneck sweatshirt featuring a large white
+                  Trefoil logo across the chest.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 290.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="dickies"
+              data-category="sweaters"
+              data-price="380000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Dickies/Oakport\ Hoodie\ Brown.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Oakport Hoodie Brown</h3>
+                <p class="description">
+                  Warm, heavy brown hoodie with a front pouch pocket and
+                  drawstring hood.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 380.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="sweaters"
+              data-price="299000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Uniqlo/Fine\ Gauge\ V\ Neck\ Black.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Fine Gauge V-Neck</h3>
+                <p class="description">
+                  Lightweight black V-neck sweater, perfect for smart layering
+                  over a collared shirt.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 299.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="sweaters"
+              data-price="350000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Nike/Club\ Fleece\ Pullover\ Black.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Club Fleece Pullover</h3>
+                <p class="description">
+                  Essential black fleece hoodie, brushed inside for softness and
+                  warmth.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 350.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="overhemden"
+              data-price="299000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Uniqlo/Flannel\ Checked\ Red.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Flannel Checked Shirt</h3>
+                <p class="description">
+                  Soft brushed cotton flannel shirt in a classic red and black
+                  buffalo check pattern.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 299.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="overhemden"
+              data-price="250000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Oversized\ Corduroy\ Shirt.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Oversized Corduroy Shirt</h3>
+                <p class="description">
+                  Thick, soft corduroy shirt with an oversized fit, ideal for a
+                  layered winter look.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 250.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="dickies"
+              data-category="overhemden"
+              data-price="320000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Heavyweight\ Work\ Shirt.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Heavyweight Work Shirt</h3>
+                <p class="description">
+                  Rugged, thick cotton work shirt in black with chest pockets
+                  for practical use.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 320.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="overhemden"
+              data-price="280000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Chore\ Shirt\ Jacket.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Chore Shirt Jacket</h3>
+                <p class="description">
+                  Versatile cotton button-down in indigo blue, serving as a
+                  light outer layer.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 280.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="t-shirts"
+              data-price="99000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Supima\ Cotton\ Crew\ Tee.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Supima Cotton Crew Tee</h3>
+                <p class="description">
+                  Luxuriously soft Supima cotton crewneck T-shirt in heather
+                  grey.
+                </p>
+                <div class="product-actions">
+                  <p class="price">#99.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="t-shirts"
+              data-price="190000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/3-Stripes\ Tee\ Blue.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">3-Stripes Tee Blue</h3>
+                <p class="description">
+                  Vibrant blue T-shirt featuring the iconic 3-stripes down the
+                  sleeves.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 190.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class-brand="dickies"
+              data-category="t-shirts"
+              data-price="160000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Heavyweight\ Pocket\ Tee.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Heavyweight Pocket Tee</h3>
+                <p class="description">
+                  Durable, thick cotton tee designed for workwear comfort with a
+                  single chest pocket.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 160.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="boots"
+              data-price="750000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Suede\ Chukka\ Boots.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Suede Chukka Boots</h3>
+                <p class="description">
+                  Desert-style ankle boots in smooth brown suede with a crepe
+                  rubber sole.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 750.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="boots"
+              data-price="690000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Standard\ Snow\ MTE\ Boots.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Standard Snow MTE Boots</h3>
+                <p class="description">
+                  Waterproof winter boots with insulation and rugged waffle grip
+                  for cold weather.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 690.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="vans"
+              data-category="boots"
+              data-price="950000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Vans\ Leather\ Work\ Boot.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Vans Leather Work Boot</h3>
+                <p class="description">
+                  Rugged, waterproof leather boot with classic waffle tread for
+                  all-weather durability.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 950.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="ankra"
+              data-category="jacket"
+              data-price="680000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Padded\ Insulated\ Jacket.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Padded Insulated Jacket</h3>
+                <p class="description">
+                  Lightweight, insulated jacket with a high collar, perfect for
+                  cold-weather training.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 680.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="zara"
+              data-category="boots"
+              data-price="720000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Suede\ Chelsea\ Boots.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Suede Chelsea Boots</h3>
+                <p class="description">
+                  Elegant slip-on Chelsea boot in premium taupe suede with a
+                  comfortable stacked heel.
+                </p>
+                <div class="product-actions">
+                  <p class="price">#720.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="dickies"
+              data-category="overhemden"
+              data-price="410000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Heavy\ Flannel\ Overshirt.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Heavy Flannel Overshirt</h3>
+                <p class="description">
+                  Classic, thick flannel overshirt (overhemd) in a red and black
+                  check pattern, great for layering.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 410.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="uniqlo"
+              data-category="t-shirts"
+              data-price="199000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Supima\ Cotton\ T-Shirt.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Supima Cotton T-Shirt</h3>
+                <p class="description">
+                  Premium long-staple Supima cotton T-shirt, offering
+                  exceptional softness and a smooth finish.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 199.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-brand="nike"
+              data-category="boots"
+              data-price="899000"
+            >
+              <div
+                class="product-image"
+                style="background-image: url('./images/ACG\ Hiking\ Boots.jpg')"
+              ></div>
+              <div class="product-info">
+                <h3 class="title">ACG Hiking Boots</h3>
+                <p class="description">
+                  All-conditions gear boot with waterproof upper, rugged
+                  traction, and ankle support.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 899.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              class-brand="dickies"
+              data-category="boots"
+              data-price="890000"
+            >
+              <div
+                class="product-image"
+                style="
+                  background-image: url('./images/Steel\ Toe\ Work\ Boot.jpg');
+                "
+              ></div>
+              <div class="product-info">
+                <h3 class="title">Steel Toe Work Boot</h3>
+                <p class="description">
+                  Heavy-duty leather work boots with steel toe protection and
+                  oil-resistant sole.
+                </p>
+                <div class="product-actions">
+                  <p class="price"># 890.000</p>
+                  <div class="icons">
+                    <i class="uil uil-heart"></i>
+                    <i class="uil uil-shopping-cart-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection items will be inserted here dynamically -->
+      </section>
+    </main>
+
+    <!-- HELP BUTTON -->
+
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Sponsor Column -->
+        <div class="footer-column sponsor">
+          <h5>Our Sponsor</h5>
+          <img
+            src="./images/miva.jpg"
+            alt="Miva Open University Logo"
+            class="miva-logo"
+          />
+          <p class="sponsor-text">
+            Proudly supported by <strong>Miva Open University</strong>.
+          </p>
+        </div>
+
+        <div class="footer-brand footer-column">
+          <h4>PrimeFit</h4>
+          <p>
+            Fashion that celebrates confidence, elegance, and individuality
+            since 2020.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="uil uil-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="uil uil-instagram-alt"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h5>Support & Policy</h5>
+          <ul>
+            <li><a href="#shipping">Shipping & Returns</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 PrimeFit. All rights reserved.
+        <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
+      </div>
+    </footer>
+
+      <!-- HELP BUTTON -->
+
+    <!-- POPUP MODAL -->
+    <div id="popupModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close-btn">&times;</span>
+
+        <div class="modal-header">
+          <i class="uil uil-question-circle"></i>
+          <h2>How Can We Help You?</h2>
+          <p>Your support center for quick assistance and questions.</p>
+        </div>
+
+        <h3 class="section-title">
+          <i class="uil uil-headphones"></i> Quick Help Options
+        </h3>
+
+        <ul class="help-list">
+          <li>
+            <i class="uil uil-truck"></i>
+            <strong>Order Issues</strong> – Track orders, delivery dates, or
+            missing items
+          </li>
+
+          <li>
+            <i class="uil uil-credit-card"></i>
+            <strong>Payments & Refunds</strong> – Payment errors and refund
+            processing
+          </li>
+
+          <li>
+            <i class="uil uil-tshirt"></i>
+            <strong>Product Questions</strong> – Size guide, material info,
+            stock availability
+          </li>
+
+          <li>
+            <i class="uil uil-user-check"></i>
+            <strong>Account Support</strong> – Login problems, password reset
+          </li>
+        </ul>
+
+        <h3 class="section-title">
+          <i class="uil uil-comment-question"></i> Frequently Asked Questions
+        </h3>
+
+        <ul class="faq-list">
+          <li>
+            <i class="uil uil-clock"></i>
+            <strong>Delivery Time</strong><br />
+            Orders arrive within 2–5 working days.
+          </li>
+
+          <li>
+            <i class="uil uil-undo"></i>
+            <strong>Return Policy</strong><br />
+            Returns accepted within 7 days in good condition.
+          </li>
+
+          <li>
+            <i class="uil uil-ruler"></i>
+            <strong>Size Guide</strong><br />
+            Use our size chart or contact support for advice.
+          </li>
+
+          <li>
+            <i class="uil uil-location-arrow"></i>
+            <strong>Tracking Orders</strong><br />
+            Tracking details sent to email or WhatsApp after shipping.
+          </li>
+        </ul>
+
+        <h3 class="section-title">
+          <i class="uil uil-phone-volume"></i> Contact Us
+        </h3>
+
+        <p>If you still need help, reach our support team:</p>
+
+        <div class="contact-options">
+          <a href="tel:+234000000000"
+            ><i class="uil uil-phone"></i> Call Support</a
+          >
+          <a href="mailto:primefit@gmail.com"
+            ><i class="uil uil-envelope"></i> Email Us</a
+          >
+          <a href="https://wa.me/2349073280102"
+            ><i class="uil uil-whatsapp"></i> WhatsApp Support</a
+          >
+        </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
