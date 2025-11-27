@@ -1,0 +1,552 @@
+ /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* TOP HEADER */
+.header-left-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-left-top .logo-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 50%;
+}
+
+.home a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a img {
+    width: 20%;
+    height: 20%;
+}
+
+a img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.logo p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #555;
+    font-family: cursive;
+}
+
+.desktop-nav {
+    width: 50%;
+    align-items: center;
+}
+
+.header-right-top {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.header-right-top a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 5px;
+
+
+    border: #444 1px dashed;
+    border-radius: 30px;
+    padding: 8px 15px;
+}
+
+.header-right-top a:hover {
+    color: #fff;
+
+    background-color: #444;
+}
+
+/* BOTTOM HEADER */
+.down-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.down-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+
+/* BUTTONS */
+button,
+.dropbtn {
+    padding: 10px 20px;
+    background-color: #d2d0d046;
+    color: #444;
+    border: 1px solid rgba(102, 102, 102, 0.4);
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: poppins, sans-serif;
+}
+
+button:hover,
+.dropbtn:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.uil-angle-down {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px) saturate(120%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%);
+    min-width: 155px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.dropdown-content a:hover {
+    background-color: #afaeae25;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* SEARCH BAR */
+.down-right {
+    width: 40%;
+}
+
+.down-right input.searchbar {
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #666;
+    width: 100%;
+}
+
+.down-right input:focus {
+    outline: none;
+    border-color: #999;
+    background-color: #9f9f9f32;
+}
+
+/* MOBILE NAVIGATION */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.mobile-nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #444;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* SEARCH RESULTS */
+.search-results {
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .down-container {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .down-left {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+
+    .down-right {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .down-right input.searchbar {
+        width: 100%;
+    }
+
+}
+
+/* --- Typography & Color Variables (Refined) --- */
+:root {
+    --primary-color: #e3a800;
+    /* Richer, slightly darker yellow/gold */
+    --secondary-color: #1a1a1a;
+    /* Very dark grey for headings and main text */
+    --light-bg: #f8f8f8;
+    --dark-bg: #121212;
+    /* Deeper dark background */
+    --heading-font: 'Playfair Display', serif;
+    --text-color-light: #666;
+    /* Lighter text for meta info */
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--secondary-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+/* --- Global Button Style (New) --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    /* Slightly more rounded */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    /* For anchor buttons */
+    display: inline-block;
+    /* For proper padding and sizing */
+}
+
+.btn-primary:hover {
+    background-color: #ffb800;
+    /* Slightly brighter on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Header Styling (Enhanced) --- */
+.main-header {
+    background-color: #ffffff;
+    /* White header background */
+    padding: 15px 0;
+    /* Slightly less padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow */
+    position: sticky;
+    /* Make it sticky */
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1300px;
+    /* Wider content area */
+    margin: 0 auto;
+    padding: 0 30px;
+    /* More padding on sides */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    /* Larger logo */
+    font-weight: 700;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    /* Larger icon */
+    margin-right: 5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    /* More space between nav items */
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 8px 0;
+    /* Adjust padding */
+    position: relative;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.main-nav ul li a::after {
+    /* Underline effect */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: var(--primary-color);
+}
+
+.main-nav ul li a:hover::after,
+.main-nav ul li a.active::after {
+    width: 100%;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Space between sign-in and register */
+}
+
+.user-actions .sign-in {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.user-actions .sign-in:hover {
+    color: var(--primary-color);
+}
+
+.register-btn {
+    /* Re-use btn-primary styles */
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* --- Poster Banner (Hero) Styling (More Dynamic) --- */
+.poster-banner {
+    /* Background set by inline style or JS for dynamic images */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    /* Fallback */
+    height: 80vh;
+    /* Taller hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    /* Ensure nothing spills out */
+}
+
+.poster-banner::before {
+    /* Dark overlay for better text readability */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Slightly darker, softer background */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.poster-banner .tagline {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.poster-banner h1 {
+    font-size: 5em;
+    /* Larger, more impactful heading */
+    margin: 15px 0 25px 0;
+    text-transform: uppercase;
+    color: white;
+    /* Ensure heading is white */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.poster-banner .location-date {
+    font-size: 1.1em;
+}
+
+.poster-banner .cta-button {
+    /* Use general btn-primary style */
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border: none;
+    padding: 18px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* --- Countdown Timer Styling (Modern & Clean) --- */
+.countdown-section {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 60px 0;
+    /* More padding */
+    text-align: center;
+}
+
+.countdown-container h2 {
+    color: white;
+    font-size: 2em;
+    /* Smaller, more elegant heading */
+    margin-bottom: 30px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* More space between blocks */
+}
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Subtle block background */
+    padding: 20px 30px;
+    bord
