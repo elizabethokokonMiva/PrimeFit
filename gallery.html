@@ -1,185 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrimeFit</title>
-    <!-- Poppins Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/aboutImages/background_removal.png" type="image/x-icon">
+  <title>PrimeFit</title>
+      <!-- Poppins Font -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <script
-      type="module"src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
-    <link
-      rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"/>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./contact.css">
-  <link rel="stylesheet" href="./styles.css">
-</head>
+      <script
+        type="module" src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"/>
+  
+    
+   
+    <link rel="stylesheet" href="cssFile/gallery.css">
+  </head>
 
-<body>
-     <header class="header">
+
+  <body>
+    <header class="header">
+      <!-- Top Header -->
       <div class="header-left-top">
         <div class="logo-home">
           <div class="home">
-            <a href="./index.html"> <img src="./images/icom2.png" alt="" /></a>
+            <a href="index.html"> <img src="assets/aboutImages/background_removal.png" alt="" /></a>
           </div>
 
           <div class="logo">
-            <p>PrimeFit</p>
+            <p>Gallery</p>
           </div>
         </div>
 
         <nav class="desktop-nav">
           <div class="header-right-top">
             <a href="about.html">About</a>
-           
+            
             <a href="contact.html"><i class="uil uil-phone"></i></a>
-            <a href="./collections.html"
-              ><i class="uil uil-shopping-cart"></i
-            ></a>
-
+            <a href="collection.html"><i class="uil uil-shopping-cart"></i></a>
             <a href="event.html" class="event" aria-label="upcomingevents">
-              <i class="uil uil-schedule"></i>
-            </a>
+          <i class="uil uil-schedule"></i>
+        </a>
             <a href="profile.html"><i class="uil uil-user-circle"></i></a>
           </div>
         </nav>
 
+        <!-- Hamburger for mobile -->
         <div class="hamburger" id="hamburger">
           <i class="uil uil-bars"></i>
         </div>
       </div>
 
+      <!-- Mobile Nav -->
       <div class="mobile-nav" id="mobileNav">
         <a href="about.html">About </a>
-        <a href="#"><i class="uil uil-question-circle"></i> FAQ</a>
-        <a href="./contact.html"><i class="uil uil-phone"></i> Contact</a>
-        <a href="collections.html"
-          ><i class="uil uil-shopping-cart"></i> Cart</a
-        >
-        <a href="event.htm" class="event" aria-label="upcomingevents">
+           
+        <button id="helpBtn" class="help-btn" aria-label="Get Help">
+              <i class="uil uil-question"></i>
+            </button>
+        <a href="contact.html"><i class="uil uil-phone"></i> Contact</a>
+        <a href="collection.html"><i class="uil uil-shopping-cart"></i> Cart</a>
+        <a href="event.html" class="event" aria-label="upcomingevents">
           <i class="uil uil-schedule"> Events</i>
         </a>
         <a href="profile.html"><i class="uil uil-user-circle"></i> Account</a>
+        <!-- Add more links for mobile here -->
       </div>
     </header>
 
-    <div class="wrap">
-        <section class="hero-section gallery-hero">
-            <div class="brand">Explorers</div>
-            <h1>Step into a visual story of style, confidence, and creativity.<br>one easy lesson</h1>
-            <button><a href="collections.html" class="btn">More</a></button>
-        </section>
+    <div class="container">
+      <div class="title">
+        YOUR EASY ACCESS TO FUTURISTIC CLOTHING
+        <br>
+        <button><a href="collections.html" class="btn">More</a></button>
+      </div>
 
-        <section class="gallery-row">
+        
+      <section class="gallery-row">
 
-            <!-- CARD 1: Runway Videos -->
-            <div class="card slider" data-slides="3">
-            <div class="nav left" data-action="prev">&#8249;</div>
-            <div class="nav right" data-action="next">&#8250;</div>
+                <!-- CARD 1: Runway Videos -->
+        <div class="card slider" data-slides="3">
+          <div class="nav left" data-action="prev">&#8249;</div>
+          <div class="nav right" data-action="next">&#8250;</div>
 
-            <div class="media-wrap">
-                <video class="slide" muted loop poster="/mnt/data/c86e3ea4-7f44-49c3-a94b-15204db07044.jpg">
-                <source src="runway1.mp4" type="video/mp4">
-                </video>
-
-                <video class="slide" muted loop style="display:none">
-                <source src="runway2.mp4" type="video/mp4">
-                </video>
-
-                <video class="slide" muted loop style="display:none">
-                <source src="runway3.mp4" type="video/mp4">
-                </video>
-
-                <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                </div>
+          <div class="media-wrap">
+            <img class="slide" src="assets/images/Soft Hoodie.jpg">
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
             </div>
+          </div>
+        </div>
+
+                <!-- CARD 2: BTS -->
+        <div class="card center slider" data-slides="3">
+          <div class="nav left" data-action="prev">&#8249;</div>
+          <div class="nav right" data-action="next">&#8250;</div>
+
+          <div class="media-wrap">
+            <img class="slide" src="assets/images/Heavyweight Pocket Tee.jpg">
+            <img class="slide" src="assets/images/White off jacket 2024.jpg" style="display:none">
+            <img class="slide" src="assets/images/Heavy Flannel Overshirt.jpg" style="display:none">
+
+
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
             </div>
+          </div>
+        </div>
 
-            <!-- CARD 2: BTS -->
-            <div class="card center slider" data-slides="3">
-            <div class="nav left" data-action="prev">&#8249;</div>
-            <div class="nav right" data-action="next">&#8250;</div>
+                <!-- CARD 3: 3D Wearables -->
+        <div class="card slider" data-slides="3">
+          <div class="nav left" data-action="prev">&#8249;</div>
+          <div class="nav right" data-action="next">&#8250;</div>
 
-            <div class="media-wrap">
-                <img class="slide" src="./images/ACG Hiking Boots.jpg">
-                <img class="slide" src="./images - Copy/Canvas Court Shoe.jpg" style="display:none">
-                <img class="slide" src="./images/Chore Shirt Jacket.jpg" style="display:none">
+          <div class="media-wrap">
+            <img class="slide" src="assets/images/Pink Outer.jpg">
+            <img class="slide" src="assets/images/Oversized Corduroy Shirt.jpg" style="display:none">
 
-
-                <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                </div>
+            <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
             </div>
-            </div>
+          </div>
+        </div>
 
-            <!-- CARD 3: 3D Wearables -->
-            <div class="card slider" data-slides="3">
-            <div class="nav left" data-action="prev">&#8249;</div>
-            <div class="nav right" data-action="next">&#8250;</div>
-
-            <div class="media-wrap">
-                <video class="slide" muted loop poster="/mnt/data/c86e3ea4-7f44-49c3-a94b-15204db07044.jpg">
-                <source src="3dspin.mp4" type="video/mp4">
-                </video>
-
-                <img class="slide" src="3d-still.jpg" style="display:none">
-
-                <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                </div>
-            </div>
-            </div>
-
-            <!-- CARD 4: Photo Grid -->
-            <div class="card grid-card">
-            <div class="media-wrap">
-                <div class="grid">
-                <div class="grid-item" style="background-image:url('/mnt/data/c86e3ea4-7f44-49c3-a94b-15204db07044.jpg')"></div>
-                <div class="grid-item" style="background-image:url('photo2.jpg')"></div>
-                <div class="grid-item" style="background-image:url('photo3.jpg')"></div>
-                <div class="grid-item" style="background-image:url('photo4.jpg')"></div>
-                </div>
-            </div>
-            </div>
-
-        </section>
+      </section>
     </div>
-
+    <div class="top-intro">
+          <div class="marquee">
+            <p>
+              We offer the best collections • Affordable prices for everyone •
+              Quality you can trust • Shop PrimeFit Collection today • New
+              Arrivals Weekly • Premium Quality • Fast Delivery • Best Prices
+              Guaranteed • Trusted by Many •
+            </p>
+          </div>
+    </div>
     <footer class="main-footer">
       <div class="footer-container">
-        <!-- Sponsor Column -->
         <div class="footer-column sponsor">
           <h5>Our Sponsor</h5>
           <img
-            src="./images/miva.jpg"
-            alt="Miva Open University Logo"
-            class="miva-logo"
+          src="assets/aboutImages/miva logo.png"
+          alt="Miva Open University Logo"
+          class="miva-logo"
           />
           <p class="sponsor-text">
-            Proudly supported by <strong>Miva Open University</strong>.
+          Proudly supported by <strong>Miva Open University</strong>.
           </p>
         </div>
 
         <div class="footer-brand footer-column">
           <h4>PrimeFit</h4>
-          <p>
-            Fashion that celebrates confidence, elegance, and individuality
-            since 2020.
-          </p>
+          <p> Fashion that celebrates confidence, elegance, and individuality since 2020.</p>
           <div class="social-icons">
-            <a href="#" aria-label="Facebook"
-              ><i class="uil uil-facebook-f"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="uil uil-instagram-alt"></i
-            ></a>
+            <a href="#" aria-label="Facebook"><i class="uil uil-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="uil uil-instagram-alt"></i></a>
             <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
           </div>
         </div>
@@ -199,7 +179,8 @@
         <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
       </div>
     </footer>
+    <script src="script/gallery.js"></script>
 
-    <script src="script.js"></script>
-</body>
+
+  </body>
 </html>
