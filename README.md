@@ -124,4 +124,6 @@ PrimeFit/
       │
       └── script src="JS/script.js"
 ```
+## Short note on all the Tagnames used
 
+You can view the project documentation here: [PrimeFit Project Doc](https://docs.google.com/document/d/1zF0Dmkh2pwl9FfJqoX0Ep3geKn0MF-im/edit?usp=sharing&ouid=104955476091114095419&rtpof=true&sd=true)
