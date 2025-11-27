@@ -1,0 +1,640 @@
+/* ---------- GLOBAL ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* TOP HEADER */
+.header-left-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-left-top .logo-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 50%;
+}
+
+.home a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+a img {
+  width: 20%;
+  height: 20%;
+}
+
+a img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #555;
+  font-family: cursive;
+}
+
+.desktop-nav {
+  width: 50%;
+  align-items: center;
+}
+
+.header-right-top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.header-right-top a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 5px;
+
+
+  border: #444 1px dashed;
+  border-radius: 30px;
+  padding: 8px 15px;
+}
+
+.header-right-top a:hover {
+  color: #fff;
+
+  background-color: #444;
+}
+
+/* BOTTOM HEADER */
+.down-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.down-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+/* BUTTONS */
+button,
+.dropbtn {
+  padding: 10px 20px;
+  background-color: #d2d0d046;
+  color: #444;
+  border: 1px solid rgba(102, 102, 102, 0.4);
+  cursor: pointer;
+  border-radius: 30px;
+  font-family: poppins, sans-serif;
+}
+
+button:hover,
+.dropbtn:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.uil-angle-down {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  min-width: 155px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+.dropdown-content a:hover {
+  background-color: #afaeae25;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* SEARCH BAR */
+.down-right {
+  width: 40%;
+}
+
+.down-right input.searchbar {
+  padding: 6px 12px;
+  border-radius: 30px;
+  border: 1px solid #666;
+  width: 100%;
+}
+
+.down-right input:focus {
+  outline: none;
+  border-color: #999;
+  background-color: #9f9f9f32;
+}
+
+/* MOBILE NAVIGATION */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* SEARCH RESULTS */
+.search-results {
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .down-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .down-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+
+  .down-right {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .down-right input.searchbar {
+    width: 100%;
+  }
+
+}
+
+/* HERO SECTION (map .hero -> .hero-section to match markup) */
+.hero-section {
+  width: 95%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+  padding: 50px 20px;
+  align-items: center;
+  margin: auto;
+  margin-top: 150px;
+  /* ensure header doesn't overlap */
+}
+
+.hero-left {
+  max-width: 720px;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  width: 100%;
+  color: #222;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.hero-video,
+.hero-section .hero-right video {
+  width: 100%;
+  max-height: 480px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.hero-section .hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TEXT BOX */
+.hero-text {
+  max-width: 450px;
+  text-align: right;
+  /* Right-align text on big screens */
+  color: #444;
+}
+
+/* TEXT STYLING */
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.intro {
+  margin-top: 60px;
+}
+
+.hero-section {
+  max-width: 1250px;
+  background: white;
+  margin: 60px auto;
+  padding: 60px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn-dark {
+  padding: 14px 35px;
+  background: #111;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.explore-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 380px;
+}
+
+/* ===========================
+   FEATURE BOXES
+=========================== */
+
+/* Features grid container */
+.features-section {
+  max-width: 1250px;
+  margin: 40px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding: 0 20px;
+}
+
+
+.feature-card {
+  background-color: #f7f5f2;
+  /* Subtle off-white color from the image */
+  border-radius: 220px;
+  /* Highly rounded corners */
+  padding: 1.5rem;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  /* Very subtle shadow */
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+}
+
+.feature-grid {
+  background-color: #f7f5f2;
+
+}
+
+/* Icon Container (Empty space above text) */
+.icon-box {
+  height: 40px;
+  /* Space for the icon */
+  width: 100%;
+  margin: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box .icon {
+  width: 36px;
+  height: 36px;
+  stroke-width: 1.8;
+  color: #111;
+}
+
+.cta-card .cta-icon {
+  width: 50px;
+  height: 50px;
+  stroke-width: 2;
+  color: #fff;
+}
+
+/* Heading Style */
+.card-heading {
+  font-size: 0.95rem;
+  /* Slightly smaller than body text for a compact look */
+  font-weight: 600;
+  /* Semi-bold */
+  color: #1f2937;
+  /* Dark text */
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+/* Description Style */
+.card-description {
+  font-size: 0.7rem;
+  /* Very small text as seen in the image */
+  font-weight: 400;
+  color: #6b7280;
+  /* Gray text */
+  line-height: 1.4;
+}
+
+.arrow-up-right {
+  width: 30px;
+  height: 30px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(15deg);
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.cta-card {
+  background-color: #1f2937;
+  /* Dark charcoal color */
+  border-radius: 210px;
+  /* Must match the others */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  min-height: 150px;
+  /* Ensure it visually aligns with the height of the content cards */
+  cursor: pointer;
+}
+
+.cta-card:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- FOOTER ----------- */
+.main-footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 6%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column h5,
+.footer-brand h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-brand p,
+.footer-column ul li a,
+.sponsor-text {
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a:hover {
+  color: #bbb;
+}
+
+.social-icons a {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #aaa;
+}
+
+.miva-logo {
+  width: 120px;
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  margin-left: 10px;
+  color: #fff;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-column,
+  .footer-brand {
+    width: 100%;
+  }
+
+  .miva-logo {
+    width: 100px;
+  }
+}
+
+.top-intro {
+  background: #222;
+  color: #fff;
+  padding: 12px 0;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.marquee p {
+  white-space: nowrap;
+  animation: scroll 18s linear infinite;
+  font-size: 15px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
