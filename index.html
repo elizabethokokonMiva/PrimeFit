@@ -1,205 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrimeFit</title>
-    <!-- Poppins Font -->
+    <title>PrimeFit — Home</title>
+    <meta name="description" content="PrimeFit Couture — stylish, trendy, and affordable clothing for young adults. Explore collections for men, women, and kids.">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="PrimeFit Couture" />
+    <meta property="og:description" content="Stylish, trendy, and affordable clothing for young adults. Explore PrimeFit collections." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elizabethokokonMiva.github.io/PrimeFit/" />
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <script
-      type="module"src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
-    <link
-      rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"/>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./contact.css">
-  <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" defer></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
+
+    <link rel="canonical" href="https://elizabethokokonMiva.github.io/PrimeFit/" />
 </head>
 
 <body>
-     <header class="header">
-      <div class="header-left-top">
-        <div class="logo-home">
-          <div class="home">
-            <a href="./index.html"> <img src="./images/icom2.png" alt="" /></a>
-          </div>
 
-          <div class="logo">
-            <p>PrimeFit</p>
-          </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="header">
+        <div class="header-left-top">
+            <div class="logo-home">
+                <div class="home">
+                    <a href="index.html" aria-label="PrimeFit home"> <img src="image/background_removal.png" alt="PrimeFit logo" /></a>
+                </div>
+
+                <div class="logo">
+                    <p>PrimeFit</p>
+                </div>
+            </div>
+
+            <nav class="desktop-nav" aria-label="Primary">
+                <div class="header-right-top">
+                    <a href="about.html">About</a>
+                    <a href="gallery.html"><i class="uil uil-image-v" aria-hidden="true"></i><span class="sr-only">Gallery</span></a>
+                    <a href="contact.html"><i class="uil uil-phone" aria-hidden="true"></i><span class="sr-only">Contact</span></a>
+                    <a href="collections.html"><i class="uil uil-shopping-bag" aria-hidden="true"></i><span class="sr-only">Collections</span></a>
+                    <a href="events.html"><i class="uil uil-schedule" aria-hidden="true"></i><span class="sr-only">Events</span></a>
+                    <a href="profile.html"><i class="uil uil-user-circle" aria-hidden="true"></i><span class="sr-only">Profile</span></a>
+                </div>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="uil uil-bars" aria-hidden="true"></i>
+            </button>
         </div>
 
-        <nav class="desktop-nav">
-          <div class="header-right-top">
-            <a href="about.html">About</a>
-           
-            <a href="contact.html"><i class="uil uil-phone"></i></a>
-            <a href="./collections.html"
-              ><i class="uil uil-shopping-cart"></i
-            ></a>
-
-            <a href="event.html" class="event" aria-label="upcomingevents">
-              <i class="uil uil-schedule"></i>
-            </a>
-            <a href="profile.html"><i class="uil uil-user-circle"></i></a>
-          </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Primary" hidden>
+            <a href="about.html">About </a>
+            <a href="gethelp.html"><i class="uil uil-question-circle" aria-hidden="true"></i> <span>FAQ</span></a>
+            <a href="contact.html"><i class="uil uil-phone" aria-hidden="true"></i> <span>Contact</span></a>
+            <a href="collections.html"><i class="uil uil-shopping-bag" aria-hidden="true"></i> <span>Cart</span></a>
+            <a href="events.html"><i class="uil uil-schedule" aria-hidden="true"></i> <span>Events</span></a>
+            <a href="profile.html"><i class="uil uil-user-circle" aria-hidden="true"></i> <span>Account</span></a>
         </nav>
-
-        <div class="hamburger" id="hamburger">
-          <i class="uil uil-bars"></i>
-        </div>
-      </div>
-
-      <div class="mobile-nav" id="mobileNav">
-        <a href="about.html">About </a>
-        <a href="#"><i class="uil uil-question-circle"></i> FAQ</a>
-        <a href="./contact.html"><i class="uil uil-phone"></i> Contact</a>
-        <a href="collections.html"
-          ><i class="uil uil-shopping-cart"></i> Cart</a
-        >
-        <a href="event.htm" class="event" aria-label="upcomingevents">
-          <i class="uil uil-schedule"> Events</i>
-        </a>
-        <a href="profile.html"><i class="uil uil-user-circle"></i> Account</a>
-      </div>
     </header>
 
-    <div class="wrap">
-        <section class="hero-section gallery-hero">
-            <div class="brand">Explorers</div>
-            <h1>Step into a visual story of style, confidence, and creativity.<br>one easy lesson</h1>
-            <button><a href="collections.html" class="btn">More</a></button>
+    <main id="main">
+        <section class="hero-section" role="region" aria-label="Hero">
+            <div class="hero-left">
+                <h1>Your Style Journey<br>Begins Here</h1>
+                <p>
+                    Discover fashion that celebrates confidence, elegance,
+                    and individuality. Experience pieces that elevate
+                    your lifestyle and empower your presence.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="collections.html" class="btn-dark">Shop Now</a>
+                    <a href="collections.html" class="explore-link">Explore Collection →</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <video class="hero-video" poster="images/hero-poster.jpg" muted playsinline aria-label="Promotional fashion video" controls>
+                    <source src="Video/PrimeFit sale.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
 
-        <section class="gallery-row">
+        <section class="features-section" id="features" aria-labelledby="features-heading">
+            <h2 id="features-heading" class="visually-hidden">Features</h2>
 
-            <!-- CARD 1: Runway Videos -->
-            <div class="card slider" data-slides="3">
-            <div class="nav left" data-action="prev">&#8249;</div>
-            <div class="nav right" data-action="next">&#8250;</div>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <i class="uil uil-ruler-combined icon" aria-hidden="true"></i> </div>
+                <h3 class="card-heading">Authentic Craftsmanship</h3>
+                <p class="card-description">Celebrating the beauty of skilled artisan work.</p>
+            </div>
 
-            <div class="media-wrap">
-                <video class="slide" muted loop poster="/mnt/data/c86e3ea4-7f44-49c3-a94b-15204db07044.jpg">
-                <source src="runway1.mp4" type="video/mp4">
-                </video>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <i class="uil uil-flower icon" aria-hidden="true"></i> </div>
+                <h3 class="card-heading">Sustainable Practices</h3>
+                <p class="card-description">Advocating green living through eco-friendly methods.</p>
+            </div>
 
-                <video class="slide" muted loop style="display:none">
-                <source src="runway2.mp4" type="video/mp4">
-                </video>
+            <div class="feature-card">
+                <div class="icon-box">
+                    <i class="uil uil-lightbulb-alt icon" aria-hidden="true"></i> </div>
+                <h3 class="card-heading">Innovative Design</h3>
+                <p class="card-description">Creating pieces that fuse style and functionality effortlessly.</p>
+            </div>
 
-                <video class="slide" muted loop style="display:none">
-                <source src="runway3.mp4" type="video/mp4">
-                </video>
-
-                <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+            <a href="#" class="cta-card" aria-hidden="true">
+                <div class="cta-content">
+                    <i class="uil uil-arrow-up-right cta-icon" style="color: white; font-size: 2.5rem;" aria-hidden="true"></i>
                 </div>
-            </div>
-            </div>
-
-            <!-- CARD 2: BTS -->
-            <div class="card center slider" data-slides="3">
-            <div class="nav left" data-action="prev">&#8249;</div>
-            <div class="nav right" data-action="next">&#8250;</div>
-
-            <div class="media-wrap">
-                <img class="slide" src="./images/ACG Hiking Boots.jpg">
-                <img class="slide" src="./images - Copy/Canvas Court Shoe.jpg" style="display:none">
-                <img class="slide" src="./images/Chore Shirt Jacket.jpg" style="display:none">
-
-
-                <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                </div>
-            </div>
-            </div>
-
-            <!-- CARD 3: 3D Wearables -->
-            <div class="card slider" data-slides="3">
-            <div class="nav left" data-action="prev">&#8249;</div>
-            <div class="nav right" data-action="next">&#8250;</div>
-
-            <div class="media-wrap">
-                <video class="slide" muted loop poster="/mnt/data/c86e3ea4-7f44-49c3-a94b-15204db07044.jpg">
-                <source src="3dspin.mp4" type="video/mp4">
-                </video>
-
-                <img class="slide" src="3d-still.jpg" style="display:none">
-
-                <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                </div>
-            </div>
-            </div>
-
-            <!-- CARD 4: Photo Grid -->
-            <div class="card grid-card">
-            <div class="media-wrap">
-                <div class="grid">
-                <div class="grid-item" style="background-image:url('/mnt/data/c86e3ea4-7f44-49c3-a94b-15204db07044.jpg')"></div>
-                <div class="grid-item" style="background-image:url('photo2.jpg')"></div>
-                <div class="grid-item" style="background-image:url('photo3.jpg')"></div>
-                <div class="grid-item" style="background-image:url('photo4.jpg')"></div>
-                </div>
-            </div>
-            </div>
+            </a>
 
         </section>
-    </div>
 
-    <footer class="main-footer">
-      <div class="footer-container">
-        <!-- Sponsor Column -->
-        <div class="footer-column sponsor">
-          <h5>Our Sponsor</h5>
-          <img
-            src="./images/miva.jpg"
-            alt="Miva Open University Logo"
-            class="miva-logo"
-          />
-          <p class="sponsor-text">
-            Proudly supported by <strong>Miva Open University</strong>.
-          </p>
+        <div class="top-intro">
+            <div class="marquee" aria-hidden="true">
+                <p>
+                    We offer the best collections • Affordable prices for everyone •
+                    Quality you can trust • Shop PrimeFit Collection today • New
+                    Arrivals Weekly • Premium Quality • Fast Delivery • Best Prices
+                    Guaranteed • Trusted by Many •
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-column sponsor">
+                <h5>Our Sponsor</h5>
+                <img src="image/miva logo.png" alt="Miva Open University Logo" class="miva-logo" />
+                <p class="sponsor-text">
+                    Proudly supported by <strong>Miva Open University</strong>.
+                </p>
+            </div>
+
+            <div class="footer-brand footer-column">
+                <h4>PrimeFit</h4>
+                <p>
+                    Fashion that celebrates confidence, elegance, and individuality
+                    since 2020.
+                </p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="uil uil-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="uil uil-instagram-alt" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="uil uil-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h5>Support & Policy</h5>
+                <ul>
+                    <li><a href="#shipping">Shipping & Returns</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="footer-brand footer-column">
-          <h4>PrimeFit</h4>
-          <p>
-            Fashion that celebrates confidence, elegance, and individuality
-            since 2020.
-          </p>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook"
-              ><i class="uil uil-facebook-f"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="uil uil-instagram-alt"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
-          </div>
+        <div class="footer-bottom">
+            &copy; 2025 PrimeFit. All rights reserved.
+            <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
         </div>
-
-        <div class="footer-column">
-          <h5>Support & Policy</h5>
-          <ul>
-            <li><a href="#shipping">Shipping & Returns</a></li>
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms of Service</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        &copy; 2025 PrimeFit. All rights reserved.
-        <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
-      </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="JS/script.js" defer></script>
 </body>
+
 </html>
