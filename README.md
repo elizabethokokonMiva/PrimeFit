@@ -35,8 +35,6 @@ our Web Development coursework at Miva University.
 - JavaScript (DOM Manipulation)
 - Icons: Unicons
 
-## 🌐 Live Website Link
-Open `index.html` in any browser.
 
 ## PrimeFit Homepage HTML Code
 
