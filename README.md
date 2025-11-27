@@ -1,6 +1,6 @@
 # PrimeFit Couture – Fashion House Website
 
-PrimeFit Couture is an 8-page fashion brand website built by Team XYZ as part of
+PrimeFit Couture is an 8-page fashion brand website built by Team MAN-CSC M25 G15 as part of
 our Web Development coursework at Miva University.
 
 ## 🔥 Website Features
@@ -207,3 +207,12 @@ Open `index.html` in any browser.
 </html>
 
 
+## 🔗 Live Website
+Click below to view the website live:
+
+## 📂 Project Files
+- [index.html](index.html)
+- [style.css](cssFile/index.css)
+- [script.js](script/index.js)
+
+- 
