@@ -1,11 +1,10 @@
 # PrimeFit Couture – Fashion House Website
 
-PrimeFit Couture is an 7-page fashion brand website built by Team MAN-CSC M25 G15 as part of
+PrimeFit Couture is an 8-page fashion brand website built by Team MAN-CSC M25 G15 as part of
 our Web Development coursework at Miva University.
 
-## Website Features
-
-- 7 complete pages (Home, About, Gallery, Collections, Contact, Profile, Events)
+## 🔥 Website Features
+- 8 complete pages (Home, About, Gallery, Collections, Contact, Profile, Events, FAQs)
 - Board of Trustees section with group members
 - External CSS for all styling
 - Marquee running across all pages
@@ -43,14 +42,14 @@ our Web Development coursework at Miva University.
 
 - Kingsley Chinedu Ikeli – Contact Page
 
-## Languages Used
-
+## 🛠 Languages Used
 - HTML5
-- CSS (External Stylesheets)
-- JavaScript
+- CSS3 (External Stylesheets)
+- JavaScript (DOM Manipulation)
 - Icons: Unicons
 
-### 📂 Project Folder Structure
+
+### 📂 DOM Folder Structure
 ```txt
 PrimeFit/
 ├── index.html
@@ -60,7 +59,6 @@ PrimeFit/
 ├── gallery.html
 ├── events.html
 ├── profile.html
-├── gethelp.html
 ├── README.md
 │
 ├── cssFile/
@@ -71,14 +69,22 @@ PrimeFit/
 │   ├── gallery.css
 │   └── other css files...
 │
-├── JS/
+├── script/
+│   ├── index.js
+│   ├── about.js
+│   ├── contact.js
+│   ├── collection.js
+│   ├── gallery.js
+│   ├── events.js
 │   └── script.js
 │
+├── assets/
 ├── image/
 │   ├── background_removal.png
 │   ├── miva logo.png
 │   └── other images...
 │
+├── aboutimages/
 ├── images/
 │   └── hero-poster.jpg
 │
@@ -87,43 +93,6 @@ PrimeFit/
 ```
 
 
-## DOM Structure (index.html)
-```txt
-<html>
- ├── head
- │    ├── meta tags
- │    ├── title
- │    ├── fonts
- │    ├── stylesheets
- │    ├── scripts
- │    └── SEO tags
- │
- └── body
-      ├── skip link
-      ├── header
-      │    ├── logo section
-      │    ├── desktop nav
-      │    └── mobile nav
-      │
-      ├── main
-      │    ├── hero-section
-      │    │    ├── hero-left
-      │    │    └── hero-right (video)
-      │    │
-      │    ├── features-section
-      │    │    ├── feature-card
-      │    │    ├── feature-card
-      │    │    └── feature-card
-      │    │
-      │    └── marquee (top-intro)
-      │
-      ├── footer
-      │    ├── sponsor section
-      │    ├── brand section
-      │    └── policy section
-      │
-      └── script src="JS/script.js"
-```
 ## Short note on all the Tagnames used
 
 You can view the project documentation here: [PrimeFit Project Doc](https://docs.google.com/document/d/1zF0Dmkh2pwl9FfJqoX0Ep3geKn0MF-im/edit?usp=sharing&ouid=104955476091114095419&rtpof=true&sd=true)
