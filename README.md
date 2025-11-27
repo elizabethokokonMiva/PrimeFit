@@ -50,5 +50,71 @@ our Web Development coursework at Miva University.
 - JavaScript
 - Icons: Unicons
 
+PrimeFit/
+│── index.html
+│── about.html
+│── contact.html
+│── collections.html
+│── gallery.html
+│── events.html
+│── profile.html
+│── gethelp.html
+│── README.md
+│
+├── css/
+│    ├── index.css
+│    ├── contact.css
+│    └── other css files...
+│
+├── JS/
+│    └── script.js
+│
+├── image/
+│    ├── background_removal.png
+│    ├── miva logo.png
+│    └── other images...
+│
+├── images/
+│    └── hero-poster.jpg
+│
+└── Video/
+     └── PrimeFit sale.mp4
+
+
+## DOM Structure (index.html)
+<html>
+ ├── <head>
+ │     ├── meta tags
+ │     ├── title
+ │     ├── fonts
+ │     ├── stylesheets
+ │     ├── scripts
+ │     └── SEO tags
+ │
+ └── <body>
+       ├── <a class="skip-link">
+       ├── <header>
+       │     ├── logo section
+       │     ├── desktop nav
+       │     └── mobile nav
+       │
+       ├── <main>
+       │     ├── <section class="hero-section">
+       │     │     ├── hero-left
+       │     │     └── hero-right (video)
+       │     │
+       │     ├── <section class="features-section">
+       │     │     ├── feature-card
+       │     │     ├── feature-card
+       │     │     └── feature-card
+       │     │
+       │     └── <div class="top-intro"> (marquee)
+       │
+       ├── <footer>
+       │     ├── sponsor section
+       │     ├── brand section
+       │     └── policy section
+       │
+       └── <script src="JS/script.js">
 
 
