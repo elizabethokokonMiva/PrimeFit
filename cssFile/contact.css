@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* TOP HEADER */
+.header-left-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-left-top .logo-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 50%;
+}
+
+.home a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+a img {
+  width: 20%;
+  height: 20%;
+}
+
+a img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #555;
+  font-family: cursive;
+}
+
+.desktop-nav {
+  width: 50%;
+  align-items: center;
+}
+
+.header-right-top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.header-right-top a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 5px;
+
+
+  border: #444 1px dashed;
+  border-radius: 30px;
+  padding: 8px 15px;
+}
+
+.header-right-top a:hover {
+  color: #fff;
+
+  background-color: #444;
+}
+
+/* BOTTOM HEADER */
+.down-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.down-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+
+/* BUTTONS */
+button,
+.dropbtn {
+  padding: 10px 20px;
+  background-color: #d2d0d046;
+  color: #444;
+  border: 1px solid rgba(102, 102, 102, 0.4);
+  cursor: pointer;
+  border-radius: 30px;
+  font-family: poppins, sans-serif;
+}
+
+button:hover,
+.dropbtn:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.uil-angle-down {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 20px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  min-width: 155px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+.dropdown-content a:hover {
+  background-color: #afaeae25;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* SEARCH BAR */
+.down-right {
+  width: 40%;
+}
+
+.down-right input.searchbar {
+  padding: 6px 12px;
+  border-radius: 30px;
+  border: 1px solid #666;
+  width: 100%;
+}
+
+.down-right input:focus {
+  outline: none;
+  border-color: #999;
+  background-color: #9f9f9f32;
+}
+
+/* MOBILE NAVIGATION */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* SEARCH RESULTS */
+.search-results {
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .down-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .down-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+
+  .down-right {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .down-right input.searchbar {
+    width: 100%;
+  }
+
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  z-index: -1;
+  padding: 10px;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-right: 20px;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.66);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.arrow-container h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.arrow-container p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.drop-down-arrow {
+  position: absolute;
+  bottom: 20px;
+}
+
+.button-pointer {
+  background: none;
+  font-size: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1px 12px 2px 12px;
+  border-radius: 50%;
+}
+
+.main-body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.specify {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 12px;
+  width: 95%;
+  border-bottom: 2px solid lightgray;
+}
+
+
+.specify2 {
+  margin: auto;
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 15px;
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 2px solid lightgray;
+}
+
+.checked {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.submit-btnnn {
+  margin-top: 20px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid lightgrey;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.title {
+  font-weight: 900;
+  color: white;
+  font-size: 40px;
+}
+
+.form-container {
+  height: 100%;
+  width: 400px;
+  background-color: white;
+  padding: 70px 10px 70px 10px;
+}
+
+.footer-container {
+  margin-top: 30px;
+  padding-left: 100px;
+  padding-right: 50px;
+}
+
+.classic-description {
+  width: 400px;
+  margin-top: -10px;
+}
+
+.classic-description p {
+  line-height: 30px;
+}
+
+.classic-description h1 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.line {
+  justify-self: center;
+  width: 75%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 1px;
+  background-color: lightgray;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  justify-content: space-evenly;
+}
+
+.contact-us {
+  width: 160px;
+
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: rotate(45deg);
+
+  animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  to {
+    transform: translateY(10px) rotate(45deg);
+  }
+}
+
+
+
+
+@media (max-width: 850px) {
+  .main-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+    row-gap: 20px;
+  }
+}
+
+/* ---------- FOOTER ----------- */
+.main-footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 6%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column h5,
+.footer-brand h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-brand p,
+.footer-column ul li a,
+.sponsor-text {
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a:hover {
+  color: #bbb;
+}
+
+.social-icons a {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #aaa;
+}
+
+.miva-logo {
+  width: 120px;
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  margin-left: 10px;
+  color: #fff;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-column,
+  .footer-brand {
+    width: 100%;
+  }
+
+  .miva-logo {
+    width: 100px;
+  }
+}
+
+.top-intro {
+  width: 95%;
+  text-align: start;
+  margin-bottom: 20px;
+  padding: 15px;
+  margin: auto;
+}
+
+.top-intro h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.top-intro p {
+  font-size: 18px;
+  color: #000000;
+}
+
+/* Styles for the top-intro banner, designed to create a continuous 
+scrolling announcement bar using CSS animation.
+*/
+
+/* The main container for the banner */
+.top-intro {
+    width: 100%;
+    /* Use the primary color (brown) for a deep, high-contrast background */
+    background-color: var(--color-primary, #8e8e8e); 
+    /* Use the accent color (gold) for the text */
+    color: var(--color-accent, #FFD700);
+    padding: 10px 0;
+    overflow: hidden; /* Crucial: hides the text when it scrolls out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* The inner container where the animation happens */
+.marquee {
+    display: inline-block;
+    white-space: nowrap; /* Forces all text onto a single line */
+    /* Define the animation: 30s duration, linear speed, repeats infinitely */
+    animation: scroll-left 30s linear infinite; 
+}
+
+/* Optional: Style for the paragraph tag inside the marquee */
+.marquee p {
+    display: inline-block;
+    /* Add extra space to the right to prevent the text from stuttering when looping */
+    padding-right: 50px; 
+    margin: 0;
+    line-height: 1;
+}
+
+/* Keyframes define the animation path */
+@keyframes scroll-left {
+    /* Start position: 0 (the text is initially visible) */
+    0% {
+        transform: translateX(0);
+    }
+    /* End position: Move the content block completely out of view to the left */
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Optional: Pause the scrolling animation when the user hovers over the banner */
+.top-intro:hover .marquee {
+    animation-play-state: paused;
+}
