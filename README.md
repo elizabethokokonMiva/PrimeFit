@@ -31,7 +31,7 @@ our Web Development coursework at Miva University.
 | **11** | Ameen Olojede                 | ameen.olojede@miva.edu.ng           | 2024/C/DSC/0584  | 301789459 | Data Science         |
 | **12** | Samuel Bulus                  | samuel.bulus@miva.edu.ng            | 2024/C/CSC/0814  | 301759799 | Computer Science     |
 | **13** | Kingsley Chinedu Ikeli        | kingsley.ikeli@miva.edu.ng          | 2024/C/CYB/1031  | 301786681 | Cybersecurity        |
-- – Contact Page
+
 
 ## Languages Used
 - HTML5
