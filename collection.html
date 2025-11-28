@@ -1,851 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/aboutImages/background_removal.png" type="image/x-icon">
-    <title>PrimeFit</title>
-    <!-- IconScout CDN -->
-    <script
-      type="module"
-      src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.2.0/css/line.css"
-    />
-    <link rel="stylesheet" href="cssFile/collection.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <!-- Top Header -->
-      <div class="header-left-top">
-        <div class="logo-home">
-          <div class="home">
-            <a href="index.html"> <img src="assets/aboutImages/background_removal.png" alt="" /></a>
-          </div>
 
-          <div class="logo">
-            <p>Collection</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/aboutImages/background_removal.png" type="image/x-icon">
+  <title>PrimeFit</title>
+  <!-- IconScout CDN -->
+  <script type="module" src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css" />
+  <link rel="stylesheet" href="cssFile/collection.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <!-- Top Header -->
+    <div class="header-left-top">
+      <div class="logo-home">
+        <div class="home">
+          <a href="index.html"> <img src="assets/aboutImages/background_removal.png" alt="" /></a>
         </div>
 
-        <nav class="desktop-nav">
-          <div class="header-right-top">
-            <a href="about.html">About</a>
-
-            <a href="gallery.html" aria-label="Gallery"
-              ><i class="uil uil-image-v"></i
-            ></a>
-
-            <a href="contact.html" aria-label="Contact"
-              ><i class="uil uil-phone"></i
-            ></a>
-
-            <a href="event.html" class="event" aria-label="upcomingevents">
-              <i class="uil uil-schedule"></i>
-            </a>
-
-            <a href="profile.html" aria-label="User Account"
-              ><i class="uil uil-user-circle"></i
-            ></a>
-          </div>
-        </nav>
-
-        <!-- Hamburger for mobile -->
-        <div class="hamburger" id="hamburger">
-          <i class="uil uil-bars"></i>
+        <div class="logo">
+          <p>Collection</p>
         </div>
       </div>
 
-      <!-- Bottom Header -->
-      <div class="down-container">
-        <div class="down-left">
-          <div class="dropdown">
-            <button class="dropbtn">
-              Categories <i class="uil uil-angle-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Men</a>
-              <a href="#">Ladies</a>
-              <a href="#">Kids</a>
-              <!-- Add more categories here -->
-            </div>
+      <nav class="desktop-nav">
+        <div class="header-right-top">
+          <a href="about.html">About</a>
+
+          <a href="gallery.html" aria-label="Gallery"><i class="uil uil-image-v"></i></a>
+
+          <a href="contact.html" aria-label="Contact"><i class="uil uil-phone"></i></a>
+
+          <a href="event.html" class="event" aria-label="upcomingevents">
+            <i class="uil uil-schedule"></i>
+          </a>
+
+          <a href="profile.html" aria-label="User Account"><i class="uil uil-user-circle"></i></a>
+        </div>
+      </nav>
+
+      <!-- Hamburger for mobile -->
+      <div class="hamburger" id="hamburger">
+        <i class="uil uil-bars"></i>
+      </div>
+    </div>
+
+    <!-- Bottom Header -->
+    <div class="down-container">
+      <div class="down-left">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Categories <i class="uil uil-angle-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Men</a>
+            <a href="#">Ladies</a>
+            <a href="#">Kids</a>
+            <!-- Add more categories here -->
           </div>
-
-          <button>New Arrival</button>
-          <button>Sale</button>
-          <!-- Add more buttons here -->
         </div>
 
-        <div class="down-right">
-          <input
-            type="text"
-            placeholder="Search products..."
-            id="searchBar"
-            class="searchbar"
-          />
-        </div>
+        <button>New Arrival</button>
+        <button>Sale</button>
+        <!-- Add more buttons here -->
       </div>
 
-      <!-- Mobile Nav -->
-      <div class="mobile-nav" id="mobileNav">
-        <a href="about.html">About </a>
-        <a href="gallery.html" aria-label="Gallery"
-          ><i class="uil uil-image-v"></i> Gallery</a
-        >
-        <a href="contact.html"><i class="uil uil-phone"></i> Contact</a>
-        <a href="#" id="helpBtnMobile" class="help-btn" aria-label="Get Help">
-          <i class="uil uil-question"></i> Get Help
-        </a>
-
-
-        <a href="event.html" class="event" aria-label="upcomingevents">
-          <i class="uil uil-schedule"> Events</i>
-        </a>
-
-        <a href="profile.html"><i class="uil uil-user-circle"></i> Account</a>
+      <div class="down-right">
+        <input type="text" placeholder="Search products..." id="searchBar" class="searchbar" />
       </div>
-    </header>
+    </div>
 
-    <!-- MAIN CONTENT -->
-    <main>
-      <section class="hero-section">
-        <div id="searchResults" class="search-results">
-          <!-- Search results will appear here -->
-        </div>
-
-        <section class="hero">
-          <div class="hero-text">
-            <h1>PrimeFit Couture</h1>
-            <p>Explore The Various Collection of PrimeFit Couture</p>
-            <p>
-              Don't miss out to shopping collection from us!. <br />
-              You'll not be let down
-            </p>
-          </div>
-        </section>
-      </section>
-      <div class="top-intro">
-          <div class="marquee">
-            <p>
-              We offer the best collections • Affordable prices for everyone •
-              Quality you can trust • Shop PrimeFit Collection today • New
-              Arrivals Weekly • Premium Quality • Fast Delivery • Best Prices
-              Guaranteed • Trusted by Many •
-            </p>
-          </div>
-        </div>
-      <!--------- COLLECTIONS-------------- -->
-       <div class="collection-grid">
-          <div class="filters">
-            <div class="filter-group">
-              <div class="filter-header"><h4>Brand</h4></div>
-              <div class="filter-options" id="brandFilters">
-                <label class="filter-option" data-value="ankra"
-                  >Ankra<span class="count">20</span></label
-                >
-                <label class="filter-option" data-value="zara"
-                  >Zara<span class="count">10</span></label
-                >
-                <label class="filter-option" data-value="nike"
-                  >Nike<span class="count">18</span></label
-                >
-                <label class="filter-option" data-value="dicks"
-                  >Dickies<span class="count">12</span></label
-                >
-                <label class="filter-option" data-value="vans"
-                  >Vans<span class="count">40</span></label
-                >
-                <label class="filter-option" data-value="uniqlo"
-                  >Uniqlo<span class="count">30</span></label
-                >
-                <div class="show-more"><button>Show more</button></div>
-              </div>
-            </div>
-
-            <div class="filter-group">
-              <div class="filter-header"><h4>Category</h4></div>
-              <div class="filter-options" id="categoryFilters">
-               
-                <label class="filter-option" data-value="t-shirts"
-                  >T-Shirts<span class="count">40</span></label
-                >
-                <label class="filter-option" data-value="jeans"
-                  >Jeans<span class="count">16</span></label
-                >
-                <label class="filter-option" data-value="jacket"
-                  >Jacket<span class="count">10</span></label
-                >
-                <label class="filter-option" data-value="sweaters"
-                  >Sweaters<span class="count">24</span></label
-                >
-                <label class="filter-option" data-value="overhemden"
-                  >Overhemden<span class="count">30</span></label
-                >
-                
-                <div class="show-more"><button>Show more</button></div>
-              </div>
-            </div>
-
-            <div class="filter-group">
-              <div class="filter-header"><h4>Price</h4></div>
-              <div class="price-range">
-                <label for="priceRange">Price range</label>
-                <input
-                  type="range"
-                  min="10000"
-                  max="500000"
-                  value="500000"
-                  id="priceRange"
-                  aria-label="Price range"
-                  title="Price range"
-                />
-                <div class="price-labels">
-                  <span>10K</span>
-                  <span>500K</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-collection" id="productGrid">
-            <div
-              class="product-card"
-              data-brand="uniqlo"
-              data-category="jacket"
-              data-price="399000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Japan\ Green\ Outer.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Japan Green Outer</h3>
-                <p class="description">
-                  Lightweight utility jacket in a classic field color; perfect
-                  for layering on cool evenings.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 399.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart like-btn"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="zara"
-              data-category="t-shirts"
-              data-price="150000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Black\ to\ basic\ tee.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Black to basic tee</h3>
-                <p class="description">
-                  Essential cotton crewneck tee in black; a timeless piece for
-                  any casual outfit.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 150.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="ankra"
-              data-category="sweaters"
-              data-price="250000"
-            >
-              <div
-                class="product-image"
-                style="background-image: url('assets/images/Soft\ Hoodie.jpg')"
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Soft Hoodie</h3>
-                <p class="description">
-                  Classic pullover fleece hoodie featuring an embroidered logo
-                  on the chest.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 250.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="dickies"
-              data-category="jacket"
-              data-price="150000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/White\ off\ jacket\ 2024.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">White off jacket 2024</h3>
-                <p class="description">
-                  Light beige workwear jacket with durable poly-cotton blend, a
-                  relaxed fit.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 150.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="nike"
-              data-category="jacket"
-              data-price="350000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Navy\ Padded\ Windbreaker.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Navy Padded Windbreaker</h3>
-                <p class="description">
-                  Water-resistant jacket with lightweight insulation and a
-                  concealable hood for outdoor training.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 350.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="vans"
-              data-category="t-shirts"
-              data-price="250000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Dreamy\ Brown\ Shirt.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Dreamy Brown Shirt</h3>
-                <p class="description">
-                  Comfort fit graphic T-shirt in warm earth tones, ideal for
-                  skate casual style.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 250.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="zara"
-              data-category="overhemden"
-              data-price="150000"
-            >
-              <div
-                class="product-image"
-                style="background-image: url('assets/images/Pink\ Outer.jpg')"
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Pink Outer Shirt</h3>
-                <p class="description">
-                  Thick cotton overshirt (overhemd) in light pink, suitable as a
-                  light jacket.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 150.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="ankra"
-              data-category="t-shirts"
-              data-price="150000"
-            >
-              <div
-                class="product-image"
-                style="background-image: url('assets/images/White\ off\ tee.jpg')"
-              ></div>
-              <div class="product-info">
-                <h3 class="title">White off tee</h3>
-                <p class="description">
-                  Standard fit soft cotton T-shirt in an off-white color with
-                  small chest logo.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 150.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="nike"
-              data-category="t-shirts"
-              data-price="250000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/White\ off\ tee\ 2.0.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">White off tee 2.0</h3>
-                <p class="description">
-                  Heavyweight cotton T-shirt in white with a relaxed, boxy
-                  structure.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 250.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div
-              class="product-card"
-              data-brand="zara"
-              data-category="jeans"
-              data-price="499000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Slim\ Fit\ Dark\ Wash.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Slim Fit Dark Wash</h3>
-                <p class="description">
-                  Classic dark wash denim jeans with a comfortable slim fit.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 499.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="nike"
-              data-category="sweaters"
-              data-price="350000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Soft\ Hoodie.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Club Fleece Pullover</h3>
-                <p class="description">
-                  Essential black fleece hoodie, brushed inside for softness and
-                  warmth.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 350.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="uniqlo"
-              data-category="overhemden"
-              data-price="299000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Heavy\ Flannel\ Overshirt.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Flannel Checked Shirt</h3>
-                <p class="description">
-                  Soft brushed cotton flannel shirt in a classic red and black
-                  buffalo check pattern.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 299.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="zara"
-              data-category="overhemden"
-              data-price="250000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Oversized\ Corduroy\ Shirt.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Oversized Corduroy Shirt</h3>
-                <p class="description">
-                  Thick, soft corduroy shirt with an oversized fit, ideal for a
-                  layered winter look.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 250.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="dickies"
-              data-category="overhemden"
-              data-price="320000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Heavyweight\ Work\ Shirt.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Heavyweight Work Shirt</h3>
-                <p class="description">
-                  Rugged, thick cotton work shirt in black with chest pockets
-                  for practical use.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 320.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="vans"
-              data-category="overhemden"
-              data-price="280000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Chore\ Shirt\ Jacket.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Chore Shirt Jacket</h3>
-                <p class="description">
-                  Versatile cotton button-down in indigo blue, serving as a
-                  light outer layer.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 280.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="uniqlo"
-              data-category="t-shirts"
-              data-price="99000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Supima\ Cotton\ Crew\ Tee.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Supima Cotton Crew Tee</h3>
-                <p class="description">
-                  Luxuriously soft Supima cotton crewneck T-shirt in heather
-                  grey.
-                </p>
-                <div class="product-actions">
-                  <p class="price">#99.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="ankra"
-              data-category="t-shirts"
-              data-price="190000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/3-Stripes\ Tee\ Blue.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">3-Stripes Tee Blue</h3>
-                <p class="description">
-                  Vibrant blue T-shirt featuring the iconic 3-stripes down the
-                  sleeves.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 190.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class-brand="dickies"
-              data-category="t-shirts"
-              data-price="160000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Heavyweight\ Pocket\ Tee.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Heavyweight Pocket Tee</h3>
-                <p class="description">
-                  Durable, thick cotton tee designed for workwear comfort with a
-                  single chest pocket.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 160.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="ankra"
-              data-category="jacket"
-              data-price="680000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Padded\ Insulated\ Jacket.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Padded Insulated Jacket</h3>
-                <p class="description">
-                  Lightweight, insulated jacket with a high collar, perfect for
-                  cold-weather training.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 680.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="product-card"
-              data-brand="dickies"
-              data-category="overhemden"
-              data-price="410000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Heavy\ Flannel\ Overshirt.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Heavy Flannel Overshirt</h3>
-                <p class="description">
-                  Classic, thick flannel overshirt (overhemd) in a red and black
-                  check pattern, great for layering.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 410.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="product-card"
-              data-brand="uniqlo"
-              data-category="t-shirts"
-              data-price="199000"
-            >
-              <div
-                class="product-image"
-                style="
-                  background-image: url('assets/images/Supima\ Cotton\ T-Shirt.jpg');
-                "
-              ></div>
-              <div class="product-info">
-                <h3 class="title">Supima Cotton T-Shirt</h3>
-                <p class="description">
-                  Premium long-staple Supima cotton T-shirt, offering
-                  exceptional softness and a smooth finish.
-                </p>
-                <div class="product-actions">
-                  <p class="price"># 199.000</p>
-                  <div class="icons">
-                    <i class="uil uil-heart"></i>
-                    <i class="uil uil-shopping-cart-alt"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </section>
-    </main>
-
-    <!-- HELP BUTTON -->
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="about.html">About </a>
+      <a href="gallery.html" aria-label="Gallery"><i class="uil uil-image-v"></i> Gallery</a>
+      <a href="contact.html"><i class="uil uil-phone"></i> Contact</a>
+      <a href="#" id="helpBtnMobile" class="help-btn" aria-label="Get Help">
+        <i class="uil uil-question"></i> Get Help
+      </a>
 
 
-    <footer class="main-footer">
-      <div class="footer-container">
-        <!-- Sponsor Column -->
-        <div class="footer-column sponsor">
-          <h5>Our Sponsor</h5>
-          <img
-            src="assets/aboutImages/miva logo.png"
-            alt="Miva Open University Logo"
-            class="miva-logo"
-          />
-          <p class="sponsor-text">
-            Proudly supported by <strong>Miva Open University</strong>.
-          </p>
-        </div>
+      <a href="event.html" class="event" aria-label="upcomingevents">
+        <i class="uil uil-schedule"> Events</i>
+      </a>
 
-        <div class="footer-brand footer-column">
-          <h4>PrimeFit</h4>
+      <a href="profile.html"><i class="uil uil-user-circle"></i> Account</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="hero-section">
+      <div id="searchResults" class="search-results">
+        <!-- Search results will appear here -->
+      </div>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1>PrimeFit Couture</h1>
+          <p>Explore The Various Collection of PrimeFit Couture</p>
           <p>
-            Fashion that celebrates confidence, elegance, and individuality
-            since 2020.
+            Don't miss out to shopping collection from us!. <br />
+            You'll not be let down
           </p>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook"
-              ><i class="uil uil-facebook-f"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="uil uil-instagram-alt"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
+        </div>
+      </section>
+    </section>
+    <div class="top-intro">
+      <div class="marquee">
+        <p>
+          We offer the best collections • Affordable prices for everyone •
+          Quality you can trust • Shop PrimeFit Collection today • New
+          Arrivals Weekly • Premium Quality • Fast Delivery • Best Prices
+          Guaranteed • Trusted by Many •
+        </p>
+      </div>
+    </div>
+    <!--------- COLLECTIONS-------------- -->
+    <div class="collection-grid">
+      <div class="filters">
+        <div class="filter-group">
+          <div class="filter-header">
+            <h4>Brand</h4>
+          </div>
+          <div class="filter-options" id="brandFilters">
+            <label class="filter-option" data-value="ankra">Ankra<span class="count">20</span></label>
+            <label class="filter-option" data-value="zara">Zara<span class="count">10</span></label>
+            <label class="filter-option" data-value="nike">Nike<span class="count">18</span></label>
+            <label class="filter-option" data-value="dicks">Dickies<span class="count">12</span></label>
+            <label class="filter-option" data-value="vans">Vans<span class="count">40</span></label>
+            <label class="filter-option" data-value="uniqlo">Uniqlo<span class="count">30</span></label>
+            <div class="show-more"><button>Show more</button></div>
           </div>
         </div>
 
-        <div class="footer-column">
-          <h5>Support & Policy</h5>
-          <ul>
-            <li><a href="#shipping">Shipping & Returns</a></li>
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms of Service</a></li>
-          </ul>
+        <div class="filter-group">
+          <div class="filter-header">
+            <h4>Category</h4>
+          </div>
+          <div class="filter-options" id="categoryFilters">
+
+            <label class="filter-option" data-value="t-shirts">T-Shirts<span class="count">40</span></label>
+            <label class="filter-option" data-value="jeans">Jeans<span class="count">16</span></label>
+            <label class="filter-option" data-value="jacket">Jacket<span class="count">10</span></label>
+            <label class="filter-option" data-value="sweaters">Sweaters<span class="count">24</span></label>
+            <label class="filter-option" data-value="overhemden">Overhemden<span class="count">30</span></label>
+
+            <div class="show-more"><button>Show more</button></div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-header">
+            <h4>Price</h4>
+          </div>
+          <div class="price-range">
+            <label for="priceRange">Price range</label>
+            <input type="range" min="10000" max="500000" value="500000" id="priceRange" aria-label="Price range"
+              title="Price range" />
+            <div class="price-labels">
+              <span>10K</span>
+              <span>500K</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        &copy; 2025 PrimeFit. All rights reserved.
-        <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
-      </div>
-    </footer>
+      <div class="product-collection" id="productGrid">
+        <div class="product-card" data-brand="uniqlo" data-category="jacket" data-price="399000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Japan\ Green\ Outer.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Japan Green Outer</h3>
+            <p class="description">
+              Lightweight utility jacket in a classic field color; perfect
+              for layering on cool evenings.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 399.000</p>
+              <div class="icons">
+                <i class="uil uil-heart like-btn"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script src="script/collection.js"></script>
-  </body>
+        <div class="product-card" data-brand="zara" data-category="t-shirts" data-price="150000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Black\ to\ basic\ tee.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Black to basic tee</h3>
+            <p class="description">
+              Essential cotton crewneck tee in black; a timeless piece for
+              any casual outfit.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 150.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="ankra" data-category="sweaters" data-price="250000">
+          <div class="product-image" style="background-image: url('assets/images/Soft\ Hoodie.jpg')"></div>
+          <div class="product-info">
+            <h3 class="title">Soft Hoodie</h3>
+            <p class="description">
+              Classic pullover fleece hoodie featuring an embroidered logo
+              on the chest.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 250.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="dickies" data-category="jacket" data-price="150000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/White\ off\ jacket\ 2024.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">White off jacket 2024</h3>
+            <p class="description">
+              Light beige workwear jacket with durable poly-cotton blend, a
+              relaxed fit.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 150.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="nike" data-category="jacket" data-price="350000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Navy\ Padded\ Windbreaker.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Navy Padded Windbreaker</h3>
+            <p class="description">
+              Water-resistant jacket with lightweight insulation and a
+              concealable hood for outdoor training.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 350.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="vans" data-category="t-shirts" data-price="250000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Dreamy\ Brown\ Shirt.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Dreamy Brown Shirt</h3>
+            <p class="description">
+              Comfort fit graphic T-shirt in warm earth tones, ideal for
+              skate casual style.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 250.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="zara" data-category="overhemden" data-price="150000">
+          <div class="product-image" style="background-image: url('assets/images/Pink\ Outer.jpg')"></div>
+          <div class="product-info">
+            <h3 class="title">Pink Outer Shirt</h3>
+            <p class="description">
+              Thick cotton overshirt (overhemd) in light pink, suitable as a
+              light jacket.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 150.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="ankra" data-category="t-shirts" data-price="150000">
+          <div class="product-image" style="background-image: url('assets/images/White\ off\ tee.jpg')"></div>
+          <div class="product-info">
+            <h3 class="title">White off tee</h3>
+            <p class="description">
+              Standard fit soft cotton T-shirt in an off-white color with
+              small chest logo.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 150.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="nike" data-category="t-shirts" data-price="250000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/White\ off\ tee\ 2.0.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">White off tee 2.0</h3>
+            <p class="description">
+              Heavyweight cotton T-shirt in white with a relaxed, boxy
+              structure.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 250.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="zara" data-category="jeans" data-price="499000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Slim\ Fit\ Dark\ Wash.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Slim Fit Dark Wash</h3>
+            <p class="description">
+              Classic dark wash denim jeans with a comfortable slim fit.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 499.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="nike" data-category="sweaters" data-price="350000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Soft\ Hoodie.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Club Fleece Pullover</h3>
+            <p class="description">
+              Essential black fleece hoodie, brushed inside for softness and
+              warmth.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 350.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="uniqlo" data-category="overhemden" data-price="299000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Heavy\ Flannel\ Overshirt.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Flannel Checked Shirt</h3>
+            <p class="description">
+              Soft brushed cotton flannel shirt in a classic red and black
+              buffalo check pattern.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 299.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="zara" data-category="overhemden" data-price="250000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Oversized\ Corduroy\ Shirt.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Oversized Corduroy Shirt</h3>
+            <p class="description">
+              Thick, soft corduroy shirt with an oversized fit, ideal for a
+              layered winter look.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 250.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="dickies" data-category="overhemden" data-price="320000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Heavyweight\ Work\ Shirt.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Heavyweight Work Shirt</h3>
+            <p class="description">
+              Rugged, thick cotton work shirt in black with chest pockets
+              for practical use.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 320.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="vans" data-category="overhemden" data-price="280000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Chore\ Shirt\ Jacket.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Chore Shirt Jacket</h3>
+            <p class="description">
+              Versatile cotton button-down in indigo blue, serving as a
+              light outer layer.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 280.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="uniqlo" data-category="t-shirts" data-price="99000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Supima\ Cotton\ Crew\ Tee.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Supima Cotton Crew Tee</h3>
+            <p class="description">
+              Luxuriously soft Supima cotton crewneck T-shirt in heather
+              grey.
+            </p>
+            <div class="product-actions">
+              <p class="price">#99.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="ankra" data-category="t-shirts" data-price="190000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/3-Stripes\ Tee\ Blue.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">3-Stripes Tee Blue</h3>
+            <p class="description">
+              Vibrant blue T-shirt featuring the iconic 3-stripes down the
+              sleeves.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 190.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class-brand="dickies" data-category="t-shirts" data-price="160000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Heavyweight\ Pocket\ Tee.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Heavyweight Pocket Tee</h3>
+            <p class="description">
+              Durable, thick cotton tee designed for workwear comfort with a
+              single chest pocket.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 160.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="ankra" data-category="jacket" data-price="680000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Padded\ Insulated\ Jacket.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Padded Insulated Jacket</h3>
+            <p class="description">
+              Lightweight, insulated jacket with a high collar, perfect for
+              cold-weather training.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 680.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-brand="dickies" data-category="overhemden" data-price="410000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Heavy\ Flannel\ Overshirt.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Heavy Flannel Overshirt</h3>
+            <p class="description">
+              Classic, thick flannel overshirt (overhemd) in a red and black
+              check pattern, great for layering.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 410.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-brand="uniqlo" data-category="t-shirts" data-price="199000">
+          <div class="product-image" style="
+                  background-image: url('assets/images/Supima\ Cotton\ T-Shirt.jpg');
+                "></div>
+          <div class="product-info">
+            <h3 class="title">Supima Cotton T-Shirt</h3>
+            <p class="description">
+              Premium long-staple Supima cotton T-shirt, offering
+              exceptional softness and a smooth finish.
+            </p>
+            <div class="product-actions">
+              <p class="price"># 199.000</p>
+              <div class="icons">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-shopping-cart-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- Sponsor Column -->
+      <div class="footer-column sponsor">
+        <h5>Our Sponsor</h5>
+        <img src="assets/aboutImages/miva logo.png" alt="Miva Open University Logo" class="miva-logo" />
+        <p class="sponsor-text">
+          Proudly supported by <strong>Miva Open University</strong>.
+        </p>
+      </div>
+
+      <div class="footer-brand footer-column">
+        <h4>PrimeFit</h4>
+        <p>
+          Fashion that celebrates confidence, elegance, and individuality
+          since 2020.
+        </p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="uil uil-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="uil uil-instagram-alt"></i></a>
+          <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h5>Support & Policy</h5>
+        <ul>
+          <li><a href="#shipping">Shipping & Returns</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 PrimeFit. All rights reserved.
+      <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
+    </div>
+  </footer>
+
+  <script src="script/collection.js"></script>
+</body>
+
 </html>
