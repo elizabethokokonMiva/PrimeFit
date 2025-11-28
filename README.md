@@ -16,15 +16,6 @@ our Web Development coursework at Miva University.
 
 ## Board of Trustees / Team Members
 
-| Field             | Details                      |
-| ----------------- | ---------------------------- |
-| **Name**          | Elizabeth Okokon             |
-| **ID**            | 301758466                    |
-| **Matric Number** | 2024/C/DSC/0516              |
-| **Email**         | elizabeth.okokon@miva.edu.ng |
-
-## Team Members
-
 | S/N    | Name                          | Email                               | Matric Number    | ID        | Department           |
 | ------ | ----------------------------- | ----------------------------------- | ---------------- | --------- | -------------------- |
 | **1**  | Muhammed Abubakar-Sadiq       | muhammed.abubakar-sadiq@miva.edu.ng | 2024/C/DSC/0557  | 301783062 | Data Science         |
