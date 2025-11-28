@@ -30,13 +30,13 @@ our Web Development coursework at Miva University.
 | **10** | Elizabeth Okokon              | elizabeth.okokon@miva.edu.ng        | 2024/C/DSC/05161 | 301758466 | Data Science         |
 | **11** | Ameen Olojede                 | ameen.olojede@miva.edu.ng           | 2024/C/DSC/0584  | 301789459 | Data Science         |
 | **12** | Samuel Bulus                  | samuel.bulus@miva.edu.ng            | 2024/C/CSC/0814  | 301759799 | Computer Science     |
+| **13** | Kingsley Chinedu Ikeli        | kingsley.ikeli@miva.edu.ng          | 2024/C/CYB/1031  | 301786681 | Cybersecurity        |
+- – Contact Page
 
-- Kingsley Chinedu Ikeli – Contact Page
-
-## 🛠 Languages Used
+## Languages Used
 - HTML5
-- CSS3 (External Stylesheets)
-- JavaScript (DOM Manipulation)
+- CSS (External Stylesheets)
+- JavaScript 
 - Icons: Unicons
 
 
@@ -58,7 +58,8 @@ PrimeFit/
 │   ├── contact.css
 │   ├── collection.css
 │   ├── gallery.css
-│   └── other css files...
+│   ├── profile.css
+│   └── event.css
 │
 ├── script/
 │   ├── index.js
@@ -76,7 +77,6 @@ PrimeFit/
 │   └── other images...
 │
 ├── aboutimages/
-├── images/
 │   └── hero-poster.jpg
 │
 └── Video/
