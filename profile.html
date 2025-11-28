@@ -1,243 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>PrimeFit</title>
 
-    <link rel="stylesheet" href="cssFile/profile.css" />
- 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrimeFit</title>
+  <link rel="stylesheet" href="cssFile/profile.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-  </head>
-
-  <body>
-    <header class="header">
-      <div class="header-left-top">
-        <div class="logo-home">
-          <div class="home">
-            <a href="index.html">
-              <img src="assets/aboutImages/background_removal.png" alt="" />
-            </a>
-          </div>
-
-          <div class="logo">
-            <p>Profile</p>
-          </div>
+<body>
+  <header class="header">
+    <div class="header-left-top">
+      <div class="logo-home">
+        <div class="home">
+          <a href="index.html">
+            <img src="assets/aboutImages/background_removal.png" alt="" />
+          </a>
         </div>
 
-        <nav class="desktop-nav">
-          <div class="header-right-top">
-            <a href="about.html">About</a>
-            <a href="gallery.html" aria-label="Gallery"><i class="uil uil-image-v"></i></a>
-            <a href="contact.html" aria-label="Contact"><i class="uil uil-phone"></i></a>
-            <a href="collection.html"><i class="uil uil-shopping-cart"></i></a>
-            <a href="event.html"><i class="uil uil-schedule"></i></a>
-          </div>
-        </nav>
-
-        <div class="hamburger" id="hamburger">
-          <i class="uil uil-bars"></i>
+        <div class="logo">
+          <p>Profile</p>
         </div>
       </div>
 
-      <div class="mobile-nav" id="mobileNav">
-        <a href="about.html">About </a>
-        <a href="gallery.html"><i class="uil uil-image-v"></i> Gallery</a>
-        <a href="contact.html"><i class="uil uil-phone"></i> Contact</a>
-        <a href="collection.html"><i class="uil uil-shopping-cart"></i> Shop</a>
-        <a href="event.html"><i class="uil uil-schedule"></i> Events</a>
-      </div>
-    </header>
-
-    <main class="app-container">
-      <div id="profile-card" class="profile-card">
-        <div class="profile-header">
-          <img
-            id="profile-avatar"
-            class="avatar"
-            src="https://placehold.co/128x128/4f46e5/ffffff?text=PF"
-          />
-
-          <div class="user-info">
-            <div id="display-section">
-              <h2 id="profile-name-display" class="profile-name">
-                Loading User...
-              </h2>
-              <p id="profile-bio-display" class="profile-bio">
-                Style Enthusiast & PrimeFit Customer
-              </p>
-
-              <p><strong>Phone:</strong> <span id="profile-phone">—</span></p>
-              <p><strong>Email:</strong> <span id="profile-email">—</span></p>
-              <p>
-                <strong>Address:</strong> <span id="profile-address">—</span>
-              </p>
-            </div>
-
-            <p id="user-id-display" class="user-id">ID: user-1234567890</p>
-
-            <button id="edit-profile-btn" class="btn light-btn">
-              <i class="uil uil-edit"></i>Edit Profile
-            </button>
-
-            <button id="sign-in-btn" class="btn green-btn hidden">
-              <i class="uil uil-sign-in-alt"></i>Sign In / Create Account
-            </button>
-
-            <button id="delete-details-btn" class="btn red-btn delete-btn">
-              <i class="uil uil-trash-alt"></i>Delete Details
-            </button>
-          </div>
+      <nav class="desktop-nav">
+        <div class="header-right-top">
+          <a href="about.html">About</a>
+          <a href="gallery.html" aria-label="Gallery"><i class="uil uil-image-v"></i></a>
+          <a href="contact.html" aria-label="Contact"><i class="uil uil-phone"></i></a>
+          <a href="collection.html"><i class="uil uil-shopping-cart"></i></a>
+          <a href="event.html"><i class="uil uil-schedule"></i></a>
         </div>
+      </nav>
 
-        <form id="profile-edit-form" class="edit-form hidden">
-          <h3 class="section-title">Edit Details</h3>
+      <div class="hamburger" id="hamburger">
+        <i class="uil uil-bars"></i>
+      </div>
+    </div>
 
-          <label>Name</label>
-          <input type="text" id="edit-name" required />
+    <div class="mobile-nav" id="mobileNav">
+      <a href="about.html">About </a>
+      <a href="gallery.html"><i class="uil uil-image-v"></i> Gallery</a>
+      <a href="contact.html"><i class="uil uil-phone"></i> Contact</a>
+      <a href="collection.html"><i class="uil uil-shopping-cart"></i> Shop</a>
+      <a href="event.html"><i class="uil uil-schedule"></i> Events</a>
+    </div>
+  </header>
 
-          <label>Short Bio</label>
-          <textarea id="edit-bio" rows="2" required></textarea>
+  <main class="app-container">
+    <div id="profile-card" class="profile-card">
+      <div class="profile-header">
+        <img id="profile-avatar" class="avatar" src="https://placehold.co/128x128/4f46e5/ffffff?text=PF" />
 
-          <label>Phone Number</label>
-          <input type="text" id="edit-phone" placeholder="+234..." />
-
-          <label>Email Address</label>
-          <input type="email" id="edit-email" placeholder="you@example.com" />
-
-          <label>Home Address</label>
-          <input type="text" id="edit-address" placeholder="Your address..." />
-
-          <div class="form-actions">
-            <button type="submit" class="btn primary-btn">Save Changes</button>
-            <button type="button" id="cancel-edit-btn" class="btn red-btn">
-              Cancel
-            </button>
-          </div>
-
-          <p id="save-message" class="success-msg hidden">
-            Profile updated successfully!
-          </p>
-        </form>
-
-        <div id="history-sections" class="history">
-          <div class="card activity-card">
-            <h3><i class="uil uil-history"></i>Account Activity</h3>
-            <p>
-              <strong>Member Since:</strong>
-              <span id="member-since-display">Jan 2024</span>
+        <div class="user-info">
+          <div id="display-section">
+            <h2 id="profile-name-display" class="profile-name">
+              Loading User...
+            </h2>
+            <p id="profile-bio-display" class="profile-bio">
+              Style Enthusiast & PrimeFit Customer
             </p>
+
+            <p><strong>Phone:</strong> <span id="profile-phone">—</span></p>
+            <p><strong>Email:</strong> <span id="profile-email">—</span></p>
             <p>
-              <strong>Last Visited:</strong>
-              <span id="last-visited-display" class="green-text">Just now</span>
+              <strong>Address:</strong> <span id="profile-address">—</span>
             </p>
           </div>
 
-          <div class="card">
-            <h3><i class="uil uil-calendar-alt"></i>Upcoming Events</h3>
+          <p id="user-id-display" class="user-id">ID: user-1234567890</p>
 
-            <div class="event yellow">
-              <i class="uil uil-clock"></i>
-              <div>
-                <p>Style Consultation (Virtual)</p>
-                <span>Date: 25th Nov 2025 | 2PM</span>
-              </div>
-            </div>
+          <button id="edit-profile-btn" class="btn light-btn">
+            <i class="uil uil-edit"></i>Edit Profile
+          </button>
 
-            <div class="event gray">
-              <i class="uil uil-shopping-cart-alt"></i>
-              <div>
-                <p>Spring Collection Launch</p>
-                <span>5th Dec 2025 | Early Access</span>
-              </div>
-            </div>
+          <button id="sign-in-btn" class="btn green-btn hidden">
+            <i class="uil uil-sign-in-alt"></i>Sign In / Create Account
+          </button>
 
-            <p id="no-events" class="no-events hidden">No upcoming events.</p>
-          </div>
-
-          <div class="card">
-            <h3><i class="uil uil-box"></i>Order History</h3>
-
-            <div class="order delivered">
-              <div>
-                <p class="order-title">Order #PF87541</p>
-                <span>Premium Cotton T-shirt</span>
-              </div>
-              <span class="status green"
-                ><i class="uil uil-check-circle"></i>Delivered</span
-              >
-            </div>
-
-            <div class="order shipped">
-              <div>
-                <p class="order-title">Order #PF90123</p>
-                <span>Wool Blend Blazer</span>
-              </div>
-              <span class="status blue"
-                ><i class="uil uil-truck"></i>Shipped</span
-              >
-            </div>
-          </div>
+          <button id="delete-details-btn" class="btn red-btn delete-btn">
+            <i class="uil uil-trash-alt"></i>Delete Details
+          </button>
         </div>
       </div>
-    </main>
 
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-column sponsor">
-          <h5>Our Sponsor</h5>
-          <img
-            src="assets/aboutImages/miva logo.png"
-            alt="Miva Open University Logo"
-            class="miva-logo"
-          />
-          <p class="sponsor-text">
-            Proudly supported by <strong>Miva Open University</strong>.
-          </p>
+      <form id="profile-edit-form" class="edit-form hidden">
+        <h3 class="section-title">Edit Details</h3>
+
+        <label>Name</label>
+        <input type="text" id="edit-name" required />
+
+        <label>Short Bio</label>
+        <textarea id="edit-bio" rows="2" required></textarea>
+
+        <label>Phone Number</label>
+        <input type="text" id="edit-phone" placeholder="+234..." />
+
+        <label>Email Address</label>
+        <input type="email" id="edit-email" placeholder="you@example.com" />
+
+        <label>Home Address</label>
+        <input type="text" id="edit-address" placeholder="Your address..." />
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary-btn">Save Changes</button>
+          <button type="button" id="cancel-edit-btn" class="btn red-btn">
+            Cancel
+          </button>
         </div>
 
-        <div class="footer-brand footer-column">
-          <h4>PrimeFit</h4>
+        <p id="save-message" class="success-msg hidden">
+          Profile updated successfully!
+        </p>
+      </form>
+
+      <div id="history-sections" class="history">
+        <div class="card activity-card">
+          <h3><i class="uil uil-history"></i>Account Activity</h3>
           <p>
-            Fashion that celebrates confidence, elegance, and individuality
-            since 2020.
+            <strong>Member Since:</strong>
+            <span id="member-since-display">Jan 2024</span>
           </p>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook"
-              ><i class="uil uil-facebook-f"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="uil uil-instagram-alt"></i
-            ></a>
-            <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
+          <p>
+            <strong>Last Visited:</strong>
+            <span id="last-visited-display" class="green-text">Just now</span>
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><i class="uil uil-calendar-alt"></i>Upcoming Events</h3>
+
+          <div class="event yellow">
+            <i class="uil uil-clock"></i>
+            <div>
+              <p>Style Consultation (Virtual)</p>
+              <span>Date: 25th Nov 2025 | 2PM</span>
+            </div>
+          </div>
+
+          <div class="event gray">
+            <i class="uil uil-shopping-cart-alt"></i>
+            <div>
+              <p>Spring Collection Launch</p>
+              <span>5th Dec 2025 | Early Access</span>
+            </div>
+          </div>
+
+          <p id="no-events" class="no-events hidden">No upcoming events.</p>
+        </div>
+
+        <div class="card">
+          <h3><i class="uil uil-box"></i>Order History</h3>
+
+          <div class="order delivered">
+            <div>
+              <p class="order-title">Order #PF87541</p>
+              <span>Premium Cotton T-shirt</span>
+            </div>
+            <span class="status green"><i class="uil uil-check-circle"></i>Delivered</span>
+          </div>
+
+          <div class="order shipped">
+            <div>
+              <p class="order-title">Order #PF90123</p>
+              <span>Wool Blend Blazer</span>
+            </div>
+            <span class="status blue"><i class="uil uil-truck"></i>Shipped</span>
           </div>
         </div>
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-column sponsor">
+        <h5>Our Sponsor</h5>
+        <img src="assets/aboutImages/miva logo.png" alt="Miva Open University Logo" class="miva-logo" />
+        <p class="sponsor-text">
+          Proudly supported by <strong>Miva Open University</strong>.
+        </p>
+      </div>
 
-        <div class="footer-column">
-          <h5>Support & Policy</h5>
-          <ul>
-            <li><a href="#shipping">Shipping & Returns</a></li>
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms of Service</a></li>
-          </ul>
+      <div class="footer-brand footer-column">
+        <h4>PrimeFit</h4>
+        <p>
+          Fashion that celebrates confidence, elegance, and individuality
+          since 2020.
+        </p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="uil uil-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="uil uil-instagram-alt"></i></a>
+          <a href="#" aria-label="Twitter"><i class="uil uil-twitter"></i></a>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        &copy; 2025 PrimeFit. All rights reserved.
-        <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
+      <div class="footer-column">
+        <h5>Support & Policy</h5>
+        <ul>
+          <li><a href="#shipping">Shipping & Returns</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
       </div>
-    </footer>
+    </div>
 
-    
-  </body>
+    <div class="footer-bottom">
+      &copy; 2025 PrimeFit. All rights reserved.
+      <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a>
+    </div>
+  </footer>
+
+</body>
+
 </html>
