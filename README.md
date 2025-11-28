@@ -82,6 +82,97 @@ PrimeFit/
 └── Video/
     └── PrimeFit sale.mp4
 ```
+### 📂 Index DOM Structure
+```txt
+<!DOCTYPE html>
+<html lang="en">
+ ├── head
+ │    ├── meta (charset, viewport)
+ │    ├── title (PrimeFit)
+ │    ├── favicon link
+ │    ├── Google Fonts
+ │    ├── Unicons CSS
+ │    ├── index.css
+ │    ├── Unicons script (module)
+ │    └── custom script (Index.js)
+ │
+ └── body
+      ├── header.header
+      │    ├── .header-left-top
+      │    │    ├── .logo-home
+      │    │    │    ├── a (logo link)
+      │    │    │    └── img (PrimeFit logo)
+      │    │    ├── .logo
+      │    │    │    └── p (PrimeFit text)
+      │    │    ├── nav.desktop-nav
+      │    │    │    └── .header-right-top
+      │    │    │         ├── a (About)
+      │    │    │         ├── a > i (Gallery icon)
+      │    │    │         ├── a > i (Phone icon)
+      │    │    │         ├── a > i (Cart icon)
+      │    │    │         ├── a > i (Events icon)
+      │    │    │         └── a > i (Profile icon)
+      │    │    └── .hamburger
+      │    │         └── i (menu icon)
+      │    │
+      │    └── nav.mobile-nav
+      │         ├── a (About)
+      │         ├── a > i (FAQ)
+      │         ├── a > i (Contact)
+      │         ├── a > i (Cart)
+      │         ├── a > i (Events)
+      │         └── a > i (Account)
+      │
+      ├── section.hero-section
+      │    ├── .hero-left
+      │    │    ├── h1
+      │    │    ├── p
+      │    │    └── .hero-buttons
+      │    │         ├── a.btn-dark (Shop Now)
+      │    │         └── a.explore-link
+      │    │
+      │    └── .hero-right
+      │         └── video.hero-video
+      │              └── source (mp4)
+      │
+      ├── section.features-section
+      │    ├── .feature-card (x3)
+      │    │    ├── .icon-box > i
+      │    │    ├── h3.card-heading
+      │    │    └── p.card-description
+      │    └── a.cta-card
+      │         └── .cta-content > i
+      │
+      ├── .top-intro
+      │    └── .marquee > p
+      │
+      └── footer.main-footer
+           ├── .footer-container
+           │    ├── .footer-column.sponsor
+           │    │    ├── h5
+           │    │    ├── img (Miva logo)
+           │    │    └── p.sponsor-text > strong
+           │    │
+           │    ├── .footer-brand.footer-column
+           │    │    ├── h4 (PrimeFit)
+           │    │    ├── p
+           │    │    └── .social-icons
+           │    │         ├── a > i (Facebook)
+           │    │         ├── a > i (Instagram)
+           │    │         └── a > i (Twitter)
+           │    │
+           │    └── .footer-column
+           │         ├── h5
+           │         └── ul
+           │              ├── li > a (Shipping)
+           │              ├── li > a (Privacy)
+           │              └── li > a (Terms)
+           │
+           └── .footer-bottom
+                ├── text (copyright)
+                ├── a (Privacy)
+                └── a (Terms)
+```
 
 
 ## Short note on all the Tagnames used
